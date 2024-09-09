@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
+config/name="Brackeys Jam 12"
 run/main_scene="res://game/Game.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"
@@ -31,8 +31,8 @@ gdscript/warnings/unused_argument=false
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/viewport_width=1760
+window/size/viewport_height=990
 
 [importer_defaults]
 
