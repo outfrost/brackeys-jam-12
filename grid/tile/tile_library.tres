@@ -28,6 +28,7 @@ size = Vector2(1, 1)
 size = Vector3(1, 0.25, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
+no_depth_test = true
 albedo_color = Color(0.406199, 0.432372, 1, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
