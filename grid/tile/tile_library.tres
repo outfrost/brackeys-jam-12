@@ -28,8 +28,14 @@ size = Vector2(1, 1)
 size = Vector3(1, 0.25, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
+blend_mode = 1
 no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
 albedo_color = Color(0.406199, 0.432372, 1, 1)
+disable_receive_shadows = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
 material = SubResource("StandardMaterial3D_egt4c")
