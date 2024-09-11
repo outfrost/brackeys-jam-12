@@ -23,6 +23,7 @@ const TILE_SW: int = 15
 const TILE_W: int = 16
 
 var astar: = AStarGrid2D.new()
+var actors: Array[Actor] = []
 var selected_actor: Actor
 
 func _ready() -> void:
@@ -104,19 +105,41 @@ func _ready() -> void:
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(-1, -1), true)
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(1, -1), true)
 
-	var dummy: Actor = (load("res://actor/Dummy.tscn") as PackedScene).instantiate()
-	add_child(dummy)
-	dummy.grid_pos = Vector3i(-2, 0, -3)
-	dummy.action_points = 3
+	for child in get_children():
+		if child is Actor:
+			actors.append(child)
 
-	await get_tree().create_timer(1.0).timeout
-	#reset_display()
+	if actors.size() == 1:
+		var dummy = actors[0]
+		dummy.grid_pos = Vector3i(dummy.transform.origin.floor())
+		dummy.action_points = 3
 
-	select_actor(dummy)
-	await get_tree().create_timer(0.5).timeout
-	show_available_moves()
-	#await get_tree().create_timer(2.0).timeout
-	#reset_display()
+		print(dummy.grid_pos)
+		print(get_actors_in_region(Region3i.from_coords(-1, 0, -1, 2, 0, 2)))
+
+		await get_tree().create_timer(1.0).timeout
+		#reset_display()
+
+		select_actor(dummy)
+		await get_tree().create_timer(0.5).timeout
+		show_available_moves()
+
+	await get_tree().create_timer(2.0).timeout
+	reset_display()
+
+func get_actors_in_region(region: Region3i) -> Array[Actor]:
+	var result: Array[Actor] = []
+	for actor in actors:
+		if region.contains_point(actor.grid_pos):
+			result.append(actor)
+	return result
+
+func get_actors_in_range(position: Vector3i, radius: int) -> Array[Actor]:
+	var result: Array[Actor] = []
+	for actor in actors:
+		if position.distance_to(actor.grid_pos) <= float(radius):
+			result.append(actor)
+	return result
 
 func select_actor(actor: Actor) -> void:
 	selected_actor = actor
