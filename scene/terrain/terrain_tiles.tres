@@ -1,10 +1,10 @@
 [gd_resource type="MeshLibrary" load_steps=11 format=3 uid="uid://6aq0oxjqjxb7"]
 
-[ext_resource type="Material" uid="uid://cvqw21yntrt05" path="res://material/concrete.tres" id="1_uajpr"]
-[ext_resource type="Material" uid="uid://blwcq8cvh1rmm" path="res://material/grass.tres" id="2_0trui"]
-[ext_resource type="Material" uid="uid://86bedn7hw3wt" path="res://material/floor_tiled.tres" id="3_lcv7v"]
-[ext_resource type="Material" uid="uid://b2nwqcq28vw2i" path="res://material/floor_wooden.tres" id="4_hsul7"]
-[ext_resource type="Material" uid="uid://bedy0ajsucxxk" path="res://material/asphalt.tres" id="5_or25e"]
+[ext_resource type="Material" path="res://material/concrete.tres" id="1_uajpr"]
+[ext_resource type="Material" path="res://material/grass.tres" id="2_0trui"]
+[ext_resource type="Material" path="res://material/floor_tiled.tres" id="3_lcv7v"]
+[ext_resource type="Material" path="res://material/floor_wooden.tres" id="4_hsul7"]
+[ext_resource type="Material" path="res://material/asphalt.tres" id="5_or25e"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_qt2r3"]
 material = ExtResource("1_uajpr")
