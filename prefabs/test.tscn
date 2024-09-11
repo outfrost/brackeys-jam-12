@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx0tk1jjauh7r"]
+
+[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/PrefabWall0.tscn" id="1_4w53r"]
+[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/PrefabDoor0.tscn" id="2_5tou3"]
+[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/PrefabWindow0.tscn" id="3_r2dee"]
+
+[node name="Test" type="Node3D"]
+
+[node name="PrefabWall0" parent="." instance=ExtResource("1_4w53r")]
+
+[node name="PrefabDoor0" parent="." instance=ExtResource("2_5tou3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="PrefabWindow0" parent="." instance=ExtResource("3_r2dee")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
