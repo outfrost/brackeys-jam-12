@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyfco1kj6qfhm"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_00af4"]
+
+[node name="PrefabWallTunnelL" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.96701e-08, 0, 1, 0, 0.3, 0, -0.45, 0, -4.37114e-08, 0.375, 0.25, 0.35)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.3, 0, -1.50996e-07, 0, 0.3, 0, 4.52987e-08, 0, -1, 0.225, 0.25, 0.125)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.6, 0, -1.50996e-07, 7.92028e-15, -0.3, -8.74228e-08, -9.05975e-08, -2.62268e-08, 1, 0.325, 0.25, -0.125)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.0598e-08, 0.3, -4.37114e-08, 0, -1.31134e-08, -1, -0.7, -1.31134e-08, 1.91069e-15, 0.5, 0.375, 0.2)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.0598e-08, 0, -1, 0, 0.3, 0, 0.7, 0, -4.37114e-08, 0.625, 0.25, 0.2)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.0598e-08, -0.3, -4.37114e-08, 0, -1.31134e-08, 1, -0.7, 1.31134e-08, 1.91069e-15, 0.5, 0.125, 0.2)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.3, 4.52987e-08, 6.60024e-15, 0, -1.31134e-08, 1, 4.52987e-08, 0.3, 4.37114e-08, 0.2, 0.125, 0)
+mesh = SubResource("QuadMesh_00af4")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.3, 4.52987e-08, -6.60024e-15, 0, -1.31134e-08, -1, -4.52987e-08, -0.3, 4.37114e-08, 0.2, 0.375, 0)
+mesh = SubResource("QuadMesh_00af4")
