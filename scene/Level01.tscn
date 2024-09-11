@@ -1,0 +1,1506 @@
+[gd_scene load_steps=9 format=3 uid="uid://bllbs1ovh7iwt"]
+
+[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
+[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="2_o8xh5"]
+[ext_resource type="PackedScene" uid="uid://cajap0afge4hp" path="res://prefabs/Doors/PrefabDoubleDoor0.tscn" id="3_m6w17"]
+[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/Windows/PrefabWindow0.tscn" id="4_jcae0"]
+[ext_resource type="PackedScene" uid="uid://db2renv32d142" path="res://prefabs/Windows/PrefabDoubleWindow0.tscn" id="5_l6ohu"]
+[ext_resource type="PackedScene" uid="uid://dvj7m5dd703k" path="res://prefabs/Objects/PrefabDesk0.tscn" id="6_5tcfn"]
+[ext_resource type="PackedScene" uid="uid://cqm7q2m20g3nl" path="res://prefabs/Walls/PrefabWallOpenUpper.tscn" id="7_cnskp"]
+[ext_resource type="PackedScene" uid="uid://bjapw00w34h3h" path="res://prefabs/Walls/PrefabWallOpenLower0.tscn" id="8_lsv5i"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="PrefabWall5" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
+
+[node name="PrefabWall6" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="PrefabWall7" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+
+[node name="PrefabWall8" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2)
+
+[node name="PrefabWall0" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="PrefabWall25" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="PrefabWall11" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+
+[node name="PrefabWall27" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+
+[node name="PrefabWall28" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -6)
+
+[node name="PrefabWall29" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="PrefabWall30" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -6)
+
+[node name="PrefabWall31" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="PrefabWall32" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
+
+[node name="PrefabWall58" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
+
+[node name="PrefabWall59" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="PrefabWall60" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -6)
+
+[node name="PrefabWall61" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="PrefabWall62" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -6)
+
+[node name="PrefabWall114" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -26)
+
+[node name="PrefabWall115" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -26)
+
+[node name="PrefabWall116" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -26)
+
+[node name="PrefabWall117" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -26)
+
+[node name="PrefabWall124" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -24)
+
+[node name="PrefabWall125" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -25)
+
+[node name="PrefabWall128" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -22)
+
+[node name="PrefabWall130" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -21)
+
+[node name="PrefabWall129" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -23)
+
+[node name="PrefabWall126" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -26)
+
+[node name="PrefabWall127" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -26)
+
+[node name="PrefabWall118" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -26)
+
+[node name="PrefabWall119" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -26)
+
+[node name="PrefabWall120" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -26)
+
+[node name="PrefabWall121" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -26)
+
+[node name="PrefabWall122" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -26)
+
+[node name="PrefabWall123" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -26)
+
+[node name="PrefabWall177" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -26)
+
+[node name="PrefabWall193" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -26)
+
+[node name="PrefabWall194" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -40)
+
+[node name="PrefabWall195" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -40)
+
+[node name="PrefabWall12" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="PrefabWall13" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 0)
+
+[node name="PrefabWall14" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -2)
+
+[node name="PrefabWall15" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -1)
+
+[node name="PrefabWall16" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -3)
+
+[node name="PrefabWall17" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -5)
+
+[node name="PrefabWall18" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -6)
+
+[node name="PrefabWall34" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -3)
+
+[node name="PrefabWall35" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3)
+
+[node name="PrefabWall36" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3)
+
+[node name="PrefabWall37" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -3)
+
+[node name="PrefabWall46" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -11)
+
+[node name="PrefabWall47" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -11)
+
+[node name="PrefabWall48" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -11)
+
+[node name="PrefabWall49" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -11)
+
+[node name="PrefabWall94" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -11)
+
+[node name="PrefabWall50" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -11)
+
+[node name="PrefabWall51" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -11)
+
+[node name="PrefabWall52" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -11)
+
+[node name="PrefabWall53" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -11)
+
+[node name="PrefabWall67" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -11)
+
+[node name="PrefabWall68" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -11)
+
+[node name="PrefabWall69" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -11)
+
+[node name="PrefabWall72" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
+
+[node name="PrefabWall73" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -11)
+
+[node name="PrefabWall78" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -16)
+
+[node name="PrefabWall79" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -16)
+
+[node name="PrefabWall80" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -16)
+
+[node name="PrefabWall81" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -16)
+
+[node name="PrefabWall82" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -16)
+
+[node name="PrefabWall83" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -16)
+
+[node name="PrefabWall84" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -16)
+
+[node name="PrefabWall85" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -16)
+
+[node name="PrefabWall86" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="PrefabWall87" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -16)
+
+[node name="PrefabWall70" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -11)
+
+[node name="PrefabWall38" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -3)
+
+[node name="PrefabWall39" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -5)
+
+[node name="PrefabWall40" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -6)
+
+[node name="PrefabWall41" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -4)
+
+[node name="PrefabWall42" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -7)
+
+[node name="PrefabWall43" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -9)
+
+[node name="PrefabWall44" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -10)
+
+[node name="PrefabWall45" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -8)
+
+[node name="PrefabWall89" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -12)
+
+[node name="PrefabWall93" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -11)
+
+[node name="PrefabWall90" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -14)
+
+[node name="PrefabWall91" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -15)
+
+[node name="PrefabWall92" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -13)
+
+[node name="PrefabWall63" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, -6)
+
+[node name="PrefabWall64" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, -8)
+
+[node name="PrefabWall65" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, -9)
+
+[node name="PrefabWall71" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, -10)
+
+[node name="PrefabWall66" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, -7)
+
+[node name="PrefabWall99" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -11)
+
+[node name="PrefabWall100" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -13)
+
+[node name="PrefabWall101" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -14)
+
+[node name="PrefabWall102" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -15)
+
+[node name="PrefabWall103" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -12)
+
+[node name="PrefabWall104" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -16)
+
+[node name="PrefabWall105" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -18)
+
+[node name="PrefabWall106" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -19)
+
+[node name="PrefabWall107" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -20)
+
+[node name="PrefabWall108" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -17)
+
+[node name="PrefabWall109" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -21)
+
+[node name="PrefabWall110" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -23)
+
+[node name="PrefabWall111" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -24)
+
+[node name="PrefabWall112" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -25)
+
+[node name="PrefabWall113" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, 0, -22)
+
+[node name="PrefabWall131" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -16)
+
+[node name="PrefabWall132" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -18)
+
+[node name="PrefabWall133" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -19)
+
+[node name="PrefabWall134" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -20)
+
+[node name="PrefabWall135" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -17)
+
+[node name="PrefabWall136" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -21)
+
+[node name="PrefabWall137" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -23)
+
+[node name="PrefabWall138" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -24)
+
+[node name="PrefabWall139" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -25)
+
+[node name="PrefabWall140" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -22)
+
+[node name="PrefabWall141" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -26)
+
+[node name="PrefabWall142" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -28)
+
+[node name="PrefabWall143" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -29)
+
+[node name="PrefabWall144" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -30)
+
+[node name="PrefabWall145" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -27)
+
+[node name="PrefabWall146" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -31)
+
+[node name="PrefabWall147" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -33)
+
+[node name="PrefabWall148" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -34)
+
+[node name="PrefabWall149" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -35)
+
+[node name="PrefabWall150" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -32)
+
+[node name="PrefabWall151" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -36)
+
+[node name="PrefabWall152" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -38)
+
+[node name="PrefabWall153" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -39)
+
+[node name="PrefabWall154" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -40)
+
+[node name="PrefabWall155" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -37)
+
+[node name="PrefabWall231" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -42)
+
+[node name="PrefabWall232" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -43)
+
+[node name="PrefabWall233" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -44)
+
+[node name="PrefabWall234" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -46)
+
+[node name="PrefabWall235" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -47)
+
+[node name="PrefabWall236" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -48)
+
+[node name="PrefabWall237" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -45)
+
+[node name="PrefabWall238" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -49)
+
+[node name="PrefabWall239" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -51)
+
+[node name="PrefabWall240" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -52)
+
+[node name="PrefabWall241" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -53)
+
+[node name="PrefabWall242" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -50)
+
+[node name="PrefabWall243" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -54)
+
+[node name="PrefabWall244" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -56)
+
+[node name="PrefabWall245" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -52)
+
+[node name="PrefabWall246" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -52)
+
+[node name="PrefabWall247" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -55)
+
+[node name="PrefabWall248" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -52)
+
+[node name="PrefabWall249" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -52)
+
+[node name="PrefabWall250" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -42)
+
+[node name="PrefabWall251" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -43)
+
+[node name="PrefabWall252" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -44)
+
+[node name="PrefabWall253" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -46)
+
+[node name="PrefabWall254" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -47)
+
+[node name="PrefabWall255" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -48)
+
+[node name="PrefabWall256" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -45)
+
+[node name="PrefabWall257" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -49)
+
+[node name="PrefabWall258" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -51)
+
+[node name="PrefabWall259" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -52)
+
+[node name="PrefabWall322" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -52)
+
+[node name="PrefabWall323" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -52)
+
+[node name="PrefabWall324" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -52)
+
+[node name="PrefabWall325" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -52)
+
+[node name="PrefabWall260" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -52)
+
+[node name="PrefabWall261" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -50)
+
+[node name="PrefabWall262" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -52)
+
+[node name="PrefabWall263" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -57)
+
+[node name="PrefabWall264" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -62)
+
+[node name="PrefabWall265" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -61)
+
+[node name="PrefabWall266" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -52)
+
+[node name="PrefabWall267" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -60)
+
+[node name="PrefabWall268" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -59)
+
+[node name="PrefabWall269" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -42)
+
+[node name="PrefabWall270" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -43)
+
+[node name="PrefabWall271" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -44)
+
+[node name="PrefabWall272" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -46)
+
+[node name="PrefabWall273" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -47)
+
+[node name="PrefabWall274" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -48)
+
+[node name="PrefabWall275" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -45)
+
+[node name="PrefabWall276" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -49)
+
+[node name="PrefabWall277" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -51)
+
+[node name="PrefabWall278" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -52)
+
+[node name="PrefabWall279" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -53)
+
+[node name="PrefabWall280" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -50)
+
+[node name="PrefabWall281" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -54)
+
+[node name="PrefabWall282" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -56)
+
+[node name="PrefabWall283" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -57)
+
+[node name="PrefabWall284" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -58)
+
+[node name="PrefabWall285" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -55)
+
+[node name="PrefabWall286" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -59)
+
+[node name="PrefabWall287" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -60)
+
+[node name="PrefabWall288" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -61)
+
+[node name="PrefabWall289" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -62)
+
+[node name="PrefabWall290" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -63)
+
+[node name="PrefabWall291" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -64)
+
+[node name="PrefabWall156" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -40)
+
+[node name="PrefabWall157" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -40)
+
+[node name="PrefabWall158" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -40)
+
+[node name="PrefabWall159" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -40)
+
+[node name="PrefabWall160" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -40)
+
+[node name="PrefabWall161" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -40)
+
+[node name="PrefabWall162" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -40)
+
+[node name="PrefabWall163" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40)
+
+[node name="PrefabWall164" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -40)
+
+[node name="PrefabWall165" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -40)
+
+[node name="PrefabWall166" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -40)
+
+[node name="PrefabWall167" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -40)
+
+[node name="PrefabWall168" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -40)
+
+[node name="PrefabWall169" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -40)
+
+[node name="PrefabWall170" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -40)
+
+[node name="PrefabWall171" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -40)
+
+[node name="PrefabWall172" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -40)
+
+[node name="PrefabWall173" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -40)
+
+[node name="PrefabWall174" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -40)
+
+[node name="PrefabWall175" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -40)
+
+[node name="PrefabWall176" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -40)
+
+[node name="PrefabWall178" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -40)
+
+[node name="PrefabWall179" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -34)
+
+[node name="PrefabWall180" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -35)
+
+[node name="PrefabWall181" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -37)
+
+[node name="PrefabWall182" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -38)
+
+[node name="PrefabWall183" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -39)
+
+[node name="PrefabWall184" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -36)
+
+[node name="PrefabWall185" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -28)
+
+[node name="PrefabWall186" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -29)
+
+[node name="PrefabWall191" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -26)
+
+[node name="PrefabWall192" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -27)
+
+[node name="PrefabWall187" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -31)
+
+[node name="PrefabWall188" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -32)
+
+[node name="PrefabWall189" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -33)
+
+[node name="PrefabWall190" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 0, -30)
+
+[node name="PrefabWall54" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -6)
+
+[node name="PrefabWall55" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -7)
+
+[node name="PrefabWall56" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -9)
+
+[node name="PrefabWall57" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -10)
+
+[node name="PrefabWall19" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 0)
+
+[node name="PrefabWall20" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -2)
+
+[node name="PrefabWall21" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -1)
+
+[node name="PrefabWall22" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -3)
+
+[node name="PrefabWall23" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -5)
+
+[node name="PrefabWall24" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -4)
+
+[node name="PrefabWall2" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="PrefabWall3" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="PrefabWall4" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+
+[node name="PrefabWall10" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 0, 0)
+
+[node name="PrefabWall9" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 2)
+
+[node name="PrefabWall1" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="PrefabWall196" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -48)
+
+[node name="PrefabWall197" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -48)
+
+[node name="PrefabWall198" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -48)
+
+[node name="PrefabWall199" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -48)
+
+[node name="PrefabWall200" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -48)
+
+[node name="PrefabWall201" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -48)
+
+[node name="PrefabWall202" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -48)
+
+[node name="PrefabWall203" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -48)
+
+[node name="PrefabWall204" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -42)
+
+[node name="PrefabWall205" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -42)
+
+[node name="PrefabWall206" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -48)
+
+[node name="PrefabWall207" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -42)
+
+[node name="PrefabWall228" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -40)
+
+[node name="PrefabWall229" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -40)
+
+[node name="PrefabWall230" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -40)
+
+[node name="PrefabWall208" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -48)
+
+[node name="PrefabWall209" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -48)
+
+[node name="PrefabWall210" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -48)
+
+[node name="PrefabWall292" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -65)
+
+[node name="PrefabWall293" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -65)
+
+[node name="PrefabWall294" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -65)
+
+[node name="PrefabWall295" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -65)
+
+[node name="PrefabWall296" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -65)
+
+[node name="PrefabWall297" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -65)
+
+[node name="PrefabWall298" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -65)
+
+[node name="PrefabWall299" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -65)
+
+[node name="PrefabWall300" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -65)
+
+[node name="PrefabWall301" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -65)
+
+[node name="PrefabWall302" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -65)
+
+[node name="PrefabWall303" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -65)
+
+[node name="PrefabWall304" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -65)
+
+[node name="PrefabWall305" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -65)
+
+[node name="PrefabWall306" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -65)
+
+[node name="PrefabWall307" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -65)
+
+[node name="PrefabWall308" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -65)
+
+[node name="PrefabWall309" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -65)
+
+[node name="PrefabWall310" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -65)
+
+[node name="PrefabWall311" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -65)
+
+[node name="PrefabWall312" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -65)
+
+[node name="PrefabWall313" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -65)
+
+[node name="PrefabWall314" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -65)
+
+[node name="PrefabWall315" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -65)
+
+[node name="PrefabWall316" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -65)
+
+[node name="PrefabWall317" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -65)
+
+[node name="PrefabWall318" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -64)
+
+[node name="PrefabWall319" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -65)
+
+[node name="PrefabWall320" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -63)
+
+[node name="PrefabWall321" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -65)
+
+[node name="PrefabWall326" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -62)
+
+[node name="PrefabWall327" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -62)
+
+[node name="PrefabWall328" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -62)
+
+[node name="PrefabWall329" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -62)
+
+[node name="PrefabWall330" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, -62)
+
+[node name="PrefabWall331" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -62)
+
+[node name="PrefabWall358" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, -46.5)
+
+[node name="PrefabWall359" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -46.5)
+
+[node name="PrefabWall360" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -46.5)
+
+[node name="PrefabWall361" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -46.5)
+
+[node name="PrefabWall362" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0, -46.5)
+
+[node name="PrefabWall363" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -46.5)
+
+[node name="PrefabWall332" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -51)
+
+[node name="PrefabWall333" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -62)
+
+[node name="PrefabWall334" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -61)
+
+[node name="PrefabWall335" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -50)
+
+[node name="PrefabWall336" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -60)
+
+[node name="PrefabWall337" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -52)
+
+[node name="PrefabWall338" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -58)
+
+[node name="PrefabWall339" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -56)
+
+[node name="PrefabWall340" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -55)
+
+[node name="PrefabWall341" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -57)
+
+[node name="PrefabWall342" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -54)
+
+[node name="PrefabWall343" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -59)
+
+[node name="PrefabWall344" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -53)
+
+[node name="PrefabWall345" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -38)
+
+[node name="PrefabWall346" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -49)
+
+[node name="PrefabWall347" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -48)
+
+[node name="PrefabWall348" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -37)
+
+[node name="PrefabWall349" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -47)
+
+[node name="PrefabWall350" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -39)
+
+[node name="PrefabWall351" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -45)
+
+[node name="PrefabWall352" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -43)
+
+[node name="PrefabWall353" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -42)
+
+[node name="PrefabWall354" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -44)
+
+[node name="PrefabWall355" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -41)
+
+[node name="PrefabWall356" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -46)
+
+[node name="PrefabWall357" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -40)
+
+[node name="PrefabWall364" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -64)
+
+[node name="PrefabWall365" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -63)
+
+[node name="PrefabWall366" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -65)
+
+[node name="PrefabWall388" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -54)
+
+[node name="PrefabWall389" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -65)
+
+[node name="PrefabWall390" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -64)
+
+[node name="PrefabWall391" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -53)
+
+[node name="PrefabWall392" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -63)
+
+[node name="PrefabWall393" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -55)
+
+[node name="PrefabWall394" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -61)
+
+[node name="PrefabWall395" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -59)
+
+[node name="PrefabWall396" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -58)
+
+[node name="PrefabWall397" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -60)
+
+[node name="PrefabWall398" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -57)
+
+[node name="PrefabWall399" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -62)
+
+[node name="PrefabWall400" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -56)
+
+[node name="PrefabWall417" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -53)
+
+[node name="PrefabWall418" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -64)
+
+[node name="PrefabWall419" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -63)
+
+[node name="PrefabWall420" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -52)
+
+[node name="PrefabWall421" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -62)
+
+[node name="PrefabWall422" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -54)
+
+[node name="PrefabWall423" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -60)
+
+[node name="PrefabWall424" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -58)
+
+[node name="PrefabWall425" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -57)
+
+[node name="PrefabWall426" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -59)
+
+[node name="PrefabWall427" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -56)
+
+[node name="PrefabWall428" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -61)
+
+[node name="PrefabWall429" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -55)
+
+[node name="PrefabWall401" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 26, 0, -50)
+
+[node name="PrefabWall402" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -52)
+
+[node name="PrefabWall403" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -51)
+
+[node name="PrefabWall404" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, -50)
+
+[node name="PrefabWall405" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, -50)
+
+[node name="PrefabWall406" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 27, 0, -50)
+
+[node name="PrefabWall407" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 33, 0, -50)
+
+[node name="PrefabWall408" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 31, 0, -50)
+
+[node name="PrefabWall409" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, -50)
+
+[node name="PrefabWall410" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 32, 0, -50)
+
+[node name="PrefabWall411" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 29, 0, -50)
+
+[node name="PrefabWall412" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 34, 0, -50)
+
+[node name="PrefabWall413" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 28, 0, -50)
+
+[node name="PrefabWall414" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -65)
+
+[node name="PrefabWall430" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -39)
+
+[node name="PrefabWall431" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -50)
+
+[node name="PrefabWall432" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -49)
+
+[node name="PrefabWall433" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -38)
+
+[node name="PrefabWall461" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -37)
+
+[node name="PrefabWall434" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -48)
+
+[node name="PrefabWall435" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -40)
+
+[node name="PrefabWall436" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -46)
+
+[node name="PrefabWall437" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -44)
+
+[node name="PrefabWall438" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -43)
+
+[node name="PrefabWall439" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -45)
+
+[node name="PrefabWall440" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -42)
+
+[node name="PrefabWall441" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -47)
+
+[node name="PrefabWall442" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -41)
+
+[node name="PrefabWall444" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -29)
+
+[node name="PrefabWall445" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -28)
+
+[node name="PrefabWall446" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -30)
+
+[node name="PrefabWall447" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -36)
+
+[node name="PrefabWall448" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -34)
+
+[node name="PrefabWall449" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -33)
+
+[node name="PrefabWall450" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -35)
+
+[node name="PrefabWall451" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -32)
+
+[node name="PrefabWall452" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -31)
+
+[node name="PrefabWall453" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -30)
+
+[node name="PrefabWall454" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -29)
+
+[node name="PrefabWall482" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -28)
+
+[node name="PrefabWall455" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -31)
+
+[node name="PrefabWall456" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -35)
+
+[node name="PrefabWall457" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -34)
+
+[node name="PrefabWall458" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -36)
+
+[node name="PrefabWall459" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -33)
+
+[node name="PrefabWall460" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -32)
+
+[node name="PrefabWall443" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -51)
+
+[node name="PrefabWall415" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -66)
+
+[node name="PrefabWall416" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, -66)
+
+[node name="PrefabWall367" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 29, 0, -66)
+
+[node name="PrefabWall368" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 27, 0, -66)
+
+[node name="PrefabWall369" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 26, 0, -66)
+
+[node name="PrefabWall370" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 28, 0, -66)
+
+[node name="PrefabWall371" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, -66)
+
+[node name="PrefabWall372" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, -66)
+
+[node name="PrefabWall374" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 34, 0, -66)
+
+[node name="PrefabWall375" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 32, 0, -66)
+
+[node name="PrefabWall376" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 31, 0, -66)
+
+[node name="PrefabWall377" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 33, 0, -66)
+
+[node name="PrefabWall378" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, -66)
+
+[node name="PrefabWall379" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 38, 0, -66)
+
+[node name="PrefabWall380" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 36, 0, -66)
+
+[node name="PrefabWall381" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 37, 0, -66)
+
+[node name="PrefabWall382" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 39, 0, -66)
+
+[node name="PrefabWall383" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 43, 0, -66)
+
+[node name="PrefabWall384" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 41, 0, -66)
+
+[node name="PrefabWall385" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, -66)
+
+[node name="PrefabWall386" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 42, 0, -66)
+
+[node name="PrefabWall387" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 44, 0, -66)
+
+[node name="PrefabWall462" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 29, 0, -27)
+
+[node name="PrefabWall463" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 27, 0, -27)
+
+[node name="PrefabWall464" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 26, 0, -27)
+
+[node name="PrefabWall465" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 28, 0, -27)
+
+[node name="PrefabWall466" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, -27)
+
+[node name="PrefabWall467" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, -27)
+
+[node name="PrefabWall468" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 34, 0, -27)
+
+[node name="PrefabWall469" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 32, 0, -27)
+
+[node name="PrefabWall470" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 31, 0, -27)
+
+[node name="PrefabWall471" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 33, 0, -27)
+
+[node name="PrefabWall472" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, -27)
+
+[node name="PrefabWall473" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 38, 0, -27)
+
+[node name="PrefabWall474" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 36, 0, -27)
+
+[node name="PrefabWall475" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 37, 0, -27)
+
+[node name="PrefabWall476" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 39, 0, -27)
+
+[node name="PrefabWall477" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 43, 0, -27)
+
+[node name="PrefabWall478" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 41, 0, -27)
+
+[node name="PrefabWall479" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, -27)
+
+[node name="PrefabWall480" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 42, 0, -27)
+
+[node name="PrefabWall481" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 44, 0, -27)
+
+[node name="PrefabWall373" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -66)
+
+[node name="PrefabWall211" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -48)
+
+[node name="PrefabWall212" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -42)
+
+[node name="PrefabWall213" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -42)
+
+[node name="PrefabWall214" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -42)
+
+[node name="PrefabWall216" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -42)
+
+[node name="PrefabWall219" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -42)
+
+[node name="PrefabWall215" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -42)
+
+[node name="PrefabWall217" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, -42)
+
+[node name="PrefabWall218" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, -41)
+
+[node name="PrefabWall220" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -48)
+
+[node name="PrefabWall221" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -42)
+
+[node name="PrefabWall222" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -42)
+
+[node name="PrefabWall223" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -48)
+
+[node name="PrefabWall224" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -42)
+
+[node name="PrefabWall225" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -42)
+
+[node name="PrefabWall226" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -42)
+
+[node name="PrefabWall227" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -42)
+
+[node name="PrefabDoor0" parent="." instance=ExtResource("2_o8xh5")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -4)
+
+[node name="PrefabDoor2" parent="." instance=ExtResource("2_o8xh5")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -8)
+
+[node name="PrefabWall74" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -11)
+
+[node name="PrefabWall75" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -12)
+
+[node name="PrefabWall76" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -14)
+
+[node name="PrefabWall77" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -15)
+
+[node name="PrefabDoor3" parent="." instance=ExtResource("2_o8xh5")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -13)
+
+[node name="PrefabWall95" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -16)
+
+[node name="PrefabWall96" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -17)
+
+[node name="PrefabWall97" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -18)
+
+[node name="PrefabWall98" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -20)
+
+[node name="PrefabDoor4" parent="." instance=ExtResource("2_o8xh5")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -19)
+
+[node name="PrefabDoubleDoor0" parent="." instance=ExtResource("3_m6w17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="PrefabWindow0" parent="." instance=ExtResource("4_jcae0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5, 0, 2)
+
+[node name="PrefabDoubleWindow0" parent="." instance=ExtResource("5_l6ohu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="PrefabDoubleWindow1" parent="." instance=ExtResource("5_l6ohu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="PrefabDoor1" parent="." instance=ExtResource("2_o8xh5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 0, 2)
+
+[node name="PrefabDoubleDoor1" parent="." instance=ExtResource("3_m6w17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5, 0, 5)
+
+[node name="PrefabWall26" parent="." instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 2)
+
+[node name="PrefabDoubleWindow2" parent="." instance=ExtResource("5_l6ohu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 5)
+
+[node name="PrefabDesk0" parent="." instance=ExtResource("6_5tcfn")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.5, 0, -4)
+
+[node name="PrefabDesk2" parent="." instance=ExtResource("6_5tcfn")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.5, 0, -4)
+
+[node name="PrefabDesk1" parent="." instance=ExtResource("6_5tcfn")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.5, 0, -4)
+
+[node name="PrefabDesk5" parent="." instance=ExtResource("6_5tcfn")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5, 0, -4)
+
+[node name="PrefabWallOpenUpper" parent="." instance=ExtResource("7_cnskp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -16)
+
+[node name="PrefabWallOpenLower0" parent="." instance=ExtResource("8_lsv5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)

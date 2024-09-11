@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ldaj20kt21vh"]
 
-[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/PrefabWall0.tscn" id="1_rwdqh"]
+[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_rwdqh"]
 [ext_resource type="PackedScene" uid="uid://bp040d46ib7jf" path="res://grid/CombatGrid.tscn" id="2_ghc22"]
-[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/PrefabWindow0.tscn" id="3_jf5xc"]
-[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/PrefabDoor0.tscn" id="4_r70u4"]
+[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/Windows/PrefabWindow0.tscn" id="3_jf5xc"]
+[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="4_r70u4"]
 
 [node name="GridDemo" type="Node3D"]
 

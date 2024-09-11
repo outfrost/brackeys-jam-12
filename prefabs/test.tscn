@@ -1,15 +1,49 @@
-[gd_scene load_steps=4 format=3 uid="uid://cx0tk1jjauh7r"]
+[gd_scene load_steps=11 format=3 uid="uid://cx0tk1jjauh7r"]
 
-[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/PrefabWall0.tscn" id="1_4w53r"]
-[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/PrefabDoor0.tscn" id="2_5tou3"]
-[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/PrefabWindow0.tscn" id="3_r2dee"]
+[ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_4w53r"]
+[ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="2_5tou3"]
+[ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/Windows/PrefabWindow0.tscn" id="3_r2dee"]
+[ext_resource type="PackedScene" uid="uid://cajap0afge4hp" path="res://prefabs/Doors/PrefabDoubleDoor0.tscn" id="4_bkbmn"]
+[ext_resource type="PackedScene" uid="uid://db2renv32d142" path="res://prefabs/Windows/PrefabDoubleWindow0.tscn" id="5_gd218"]
+[ext_resource type="PackedScene" uid="uid://bfolp6w6x48xh" path="res://prefabs/Objects/PrefabFridge0.tscn" id="6_8njvw"]
+[ext_resource type="PackedScene" uid="uid://cqm7q2m20g3nl" path="res://prefabs/Walls/PrefabWallOpenUpper.tscn" id="7_g6g1j"]
+[ext_resource type="PackedScene" uid="uid://dvj7m5dd703k" path="res://prefabs/Objects/PrefabDesk0.tscn" id="8_g2x7y"]
+[ext_resource type="PackedScene" uid="uid://yub8b7yfwru7" path="res://prefabs/Walls/PrefabWallOpenMiddle0.tscn" id="9_wl8su"]
+[ext_resource type="PackedScene" uid="uid://bjapw00w34h3h" path="res://prefabs/Walls/PrefabWallOpenLower0.tscn" id="10_i8m5d"]
 
 [node name="Test" type="Node3D"]
 
 [node name="PrefabWall0" parent="." instance=ExtResource("1_4w53r")]
 
+[node name="PrefabDoor1" parent="." instance=ExtResource("2_5tou3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, 0)
+
 [node name="PrefabDoor0" parent="." instance=ExtResource("2_5tou3")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
+[node name="PrefabWindow1" parent="." instance=ExtResource("3_r2dee")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, 0)
+
 [node name="PrefabWindow0" parent="." instance=ExtResource("3_r2dee")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="PrefabDoubleDoor0" parent="." instance=ExtResource("4_bkbmn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="PrefabDoubleWindow0" parent="." instance=ExtResource("5_gd218")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1, 0, 0)
+
+[node name="PrefabFridge0" parent="." instance=ExtResource("6_8njvw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -2.5)
+
+[node name="PrefabWallOpenUpper" parent="." instance=ExtResource("7_g6g1j")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1, 0, -2)
+
+[node name="PrefabDesk0" parent="." instance=ExtResource("8_g2x7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -3.5)
+
+[node name="PrefabWallOpenMiddle0" parent="." instance=ExtResource("9_wl8su")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, -4)
+
+[node name="PrefabWallOpenLower0" parent="." instance=ExtResource("10_i8m5d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, -5)

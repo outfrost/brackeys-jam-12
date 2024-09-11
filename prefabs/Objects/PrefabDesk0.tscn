@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvj7m5dd703k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ktyn2"]
+size = Vector3(0.5, 0.75, 1.15)
+
+[node name="PrefabDesk0" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
+mesh = SubResource("BoxMesh_ktyn2")
