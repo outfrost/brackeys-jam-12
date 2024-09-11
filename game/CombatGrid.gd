@@ -4,6 +4,8 @@ var astar: = AStarGrid2D.new()
 var selected_actor: Actor
 
 func _ready() -> void:
+	mesh_library.get_item_mesh(0).surface_set_material(0, load("res://material/invisible.tres"))
+
 	astar.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES
 	astar.jumping_enabled = true
 
@@ -28,6 +30,8 @@ func _ready() -> void:
 	add_child(beans)
 	beans.grid_pos = Vector3i(1, 0, -1)
 	beans.action_points = 3
+
+	reset_display()
 
 	select_actor(beans)
 	await get_tree().create_timer(1.0).timeout

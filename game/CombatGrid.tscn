@@ -2,18 +2,19 @@
 
 [ext_resource type="Script" path="res://game/CombatGrid.gd" id="1_vwoip"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1f16n"]
-albedo_color = Color(0.550702, 0.499622, 0.847656, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmk51"]
+shading_mode = 0
+albedo_color = Color(1, 0, 1, 1)
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_hihvq"]
-material = SubResource("StandardMaterial3D_1f16n")
+[sub_resource type="PlaneMesh" id="PlaneMesh_sh51m"]
+material = SubResource("StandardMaterial3D_dmk51")
 size = Vector2(1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l1fr2"]
 size = Vector3(1, 0.25, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
-albedo_color = Color(1, 0.934222, 0.334285, 1)
+albedo_color = Color(0.406199, 0.432372, 1, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
 material = SubResource("StandardMaterial3D_egt4c")
@@ -23,13 +24,13 @@ size = Vector2(1, 1)
 size = Vector3(1, 0.25, 1)
 
 [sub_resource type="MeshLibrary" id="MeshLibrary_r420b"]
-item/0/name = "Tile"
-item/0/mesh = SubResource("PlaneMesh_hihvq")
+item/0/name = "TileHidden"
+item/0/mesh = SubResource("PlaneMesh_sh51m")
 item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/0/shapes = [SubResource("BoxShape3D_l1fr2"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
 item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/0/navigation_layers = 1
-item/1/name = "TileHighlighted"
+item/1/name = "Tile"
 item/1/mesh = SubResource("PlaneMesh_13j8g")
 item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/1/shapes = [SubResource("BoxShape3D_ba6sk"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
@@ -41,7 +42,7 @@ mesh_library = SubResource("MeshLibrary_r420b")
 cell_size = Vector3(1, 2.5, 1)
 cell_center_y = false
 data = {
-"cells": PackedInt32Array(0, 65535, 0, 1, 65535, 0, 1, 65534, 0, 0, 65534, 0, 65535, 65534, 0, 65534, 65534, 0, 65534, 65533, 0, 65534, 65535, 0, 65533, 65535, 0, 65533, 65534, 0, 65533, 65533, 0, 0, 0, 0, 1, 0, 0, 65532, 65535, 0, 65532, 65534, 0, 65532, 65533, 0, 2, 0, 0, 2, 65535, 0, 2, 65534, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 65531, 65535, 0, 65531, 65534, 0, 65531, 65533, 0, 65531, 65532, 0, 65532, 65532, 0, 65533, 65532, 0, 65534, 65532, 0)
+"cells": PackedInt32Array(0, 65535, 1, 1, 65535, 1, 1, 65534, 1, 0, 65534, 1, 65535, 65534, 1, 65534, 65534, 1, 65534, 65533, 1, 65534, 65535, 1, 65533, 65535, 1, 65533, 65534, 1, 65533, 65533, 1, 0, 0, 1, 1, 0, 1, 65532, 65535, 1, 65532, 65534, 1, 65532, 65533, 1, 2, 0, 1, 2, 65535, 1, 2, 65534, 1, 0, 1, 1, 1, 1, 1, 2, 1, 1, 65531, 65535, 1, 65531, 65534, 1, 65531, 65533, 1, 65531, 65532, 1, 65532, 65532, 1, 65533, 65532, 1, 65534, 65532, 1)
 }
 script = ExtResource("1_vwoip")
 
