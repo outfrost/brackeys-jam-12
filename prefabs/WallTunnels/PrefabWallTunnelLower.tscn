@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn3rm580d00ht"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xf8cl"]
+
+[node name="PrefabWallTunnelLower" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.02681e-08, 0, 1, 0, 0.3, 0, -1.15, 0, -4.37114e-08, 0.375, 0.25, 0)
+mesh = SubResource("QuadMesh_xf8cl")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.19729e-15, 0.3, -4.37114e-08, 5.02681e-08, -1.31134e-08, -1, -1.15, 0, -4.37114e-08, 0.5, 0.375, 0)
+mesh = SubResource("QuadMesh_xf8cl")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.02681e-08, 0, -1, 0, 0.3, 0, 1.15, 0, -4.37114e-08, 0.625, 0.25, 0)
+mesh = SubResource("QuadMesh_xf8cl")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.19729e-15, -0.3, -4.37114e-08, -5.02681e-08, -1.31134e-08, 1, -1.15, 0, -4.37114e-08, 0.5, 0.125, 0)
+mesh = SubResource("QuadMesh_xf8cl")

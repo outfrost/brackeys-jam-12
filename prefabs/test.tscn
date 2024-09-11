@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cx0tk1jjauh7r"]
+[gd_scene load_steps=14 format=3 uid="uid://cx0tk1jjauh7r"]
 
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_4w53r"]
 [ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="2_5tou3"]
@@ -10,6 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://dvj7m5dd703k" path="res://prefabs/Objects/PrefabDesk0.tscn" id="8_g2x7y"]
 [ext_resource type="PackedScene" uid="uid://yub8b7yfwru7" path="res://prefabs/Walls/PrefabWallOpenMiddle0.tscn" id="9_wl8su"]
 [ext_resource type="PackedScene" uid="uid://bjapw00w34h3h" path="res://prefabs/Walls/PrefabWallOpenLower0.tscn" id="10_i8m5d"]
+[ext_resource type="PackedScene" uid="uid://cn3rm580d00ht" path="res://prefabs/WallTunnels/PrefabWallTunnelLower.tscn" id="11_dpywq"]
+[ext_resource type="PackedScene" uid="uid://bsnvldwrqfoxv" path="res://prefabs/WallTunnels/PrefabWallTunnelT.tscn" id="12_6dt8l"]
+[ext_resource type="PackedScene" uid="uid://dyfco1kj6qfhm" path="res://prefabs/WallTunnels/PrefabWallTunnelL.tscn" id="13_c77x4"]
 
 [node name="Test" type="Node3D"]
 
@@ -46,4 +49,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -3.5)
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, -4)
 
 [node name="PrefabWallOpenLower0" parent="." instance=ExtResource("10_i8m5d")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1, 0, -5)
+
+[node name="PrefabWallOpenLower3" parent="." instance=ExtResource("10_i8m5d")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -5)
+
+[node name="PrefabWallOpenLower2" parent="." instance=ExtResource("10_i8m5d")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 0, 0, -4)
+
+[node name="PrefabWallOpenLower1" parent="." instance=ExtResource("10_i8m5d")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, -5)
+
+[node name="PrefabWallTunnelLower" parent="." instance=ExtResource("11_dpywq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.5, 0, -5)
+
+[node name="PrefabWallTunnelT" parent="." instance=ExtResource("12_6dt8l")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.5, 0, -5)
+
+[node name="PrefabWallTunnelL" parent="." instance=ExtResource("13_c77x4")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -4.5)
