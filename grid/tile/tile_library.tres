@@ -1,0 +1,397 @@
+[gd_resource type="MeshLibrary" load_steps=52 format=3 uid="uid://bvwwe060u3s16"]
+
+[ext_resource type="Texture2D" uid="uid://dksd0vxshoji1" path="res://grid/tile/tile_nsw.png" id="1_clqqk"]
+[ext_resource type="Texture2D" uid="uid://c68kkago5se0" path="res://grid/tile/tile_nw.png" id="2_ltrxx"]
+[ext_resource type="Texture2D" uid="uid://dqsm3cv1p8gyg" path="res://grid/tile/tile_s.png" id="3_vg6co"]
+[ext_resource type="Texture2D" uid="uid://cmhwm46pu4qu0" path="res://grid/tile/tile_se.png" id="4_v4gpm"]
+[ext_resource type="Texture2D" uid="uid://ejg0hprccc2e" path="res://grid/tile/tile_sew.png" id="5_5e130"]
+[ext_resource type="Texture2D" uid="uid://dqsqya3utrcmy" path="res://grid/tile/tile_sw.png" id="6_j054a"]
+[ext_resource type="Texture2D" uid="uid://bawkffgnt2dw3" path="res://grid/tile/tile_w.png" id="7_rlh05"]
+[ext_resource type="Texture2D" uid="uid://c1omkhy2hl40f" path="res://grid/tile/tile_base.png" id="8_7ap8m"]
+[ext_resource type="Texture2D" uid="uid://d01t7ociqr27l" path="res://grid/tile/tile_e.png" id="9_yookh"]
+[ext_resource type="Texture2D" uid="uid://mgd50cuu3yf4" path="res://grid/tile/tile_ew.png" id="10_5xstb"]
+[ext_resource type="Texture2D" uid="uid://dg8pobbner2wx" path="res://grid/tile/tile_n.png" id="11_fsdth"]
+[ext_resource type="Texture2D" uid="uid://dbnsrt2v1rjup" path="res://grid/tile/tile_ne.png" id="12_swvt4"]
+[ext_resource type="Texture2D" uid="uid://md3d55cpw1nr" path="res://grid/tile/tile_new.png" id="13_urxwx"]
+[ext_resource type="Texture2D" uid="uid://bnuag7n4gjh47" path="res://grid/tile/tile_ns.png" id="14_xvsin"]
+[ext_resource type="Texture2D" uid="uid://h7cmbp7er0l8" path="res://grid/tile/tile_nse.png" id="15_4gik4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmk51"]
+shading_mode = 0
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sh51m"]
+material = SubResource("StandardMaterial3D_dmk51")
+size = Vector2(1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l1fr2"]
+size = Vector3(1, 0.25, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
+albedo_color = Color(0.406199, 0.432372, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
+material = SubResource("StandardMaterial3D_egt4c")
+size = Vector2(1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ba6sk"]
+size = Vector3(1, 0.25, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcdvf"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("1_clqqk")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_88wjc"]
+material = SubResource("StandardMaterial3D_kcdvf")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30wqi"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("2_ltrxx")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lhhah"]
+material = SubResource("StandardMaterial3D_30wqi")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_215ek"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("3_vg6co")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2txkk"]
+material = SubResource("StandardMaterial3D_215ek")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk8pc"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("4_v4gpm")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d2te7"]
+material = SubResource("StandardMaterial3D_tk8pc")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o3uas"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("5_5e130")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eelo0"]
+material = SubResource("StandardMaterial3D_o3uas")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_504j7"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("6_j054a")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wtoor"]
+material = SubResource("StandardMaterial3D_504j7")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp8lh"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("7_rlh05")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_q0jtf"]
+material = SubResource("StandardMaterial3D_kp8lh")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h3i4s"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("8_7ap8m")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1ynak"]
+material = SubResource("StandardMaterial3D_h3i4s")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tf0rf"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("9_yookh")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8ke4w"]
+material = SubResource("StandardMaterial3D_tf0rf")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jehfl"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("10_5xstb")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pgowp"]
+material = SubResource("StandardMaterial3D_jehfl")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5e0a"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("11_fsdth")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wflb2"]
+material = SubResource("StandardMaterial3D_p5e0a")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cic1"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("12_swvt4")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dybf6"]
+material = SubResource("StandardMaterial3D_2cic1")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6os4"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("13_urxwx")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6sx1r"]
+material = SubResource("StandardMaterial3D_l6os4")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_77s70"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("14_xvsin")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2sjcx"]
+material = SubResource("StandardMaterial3D_77s70")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdbu1"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_texture = ExtResource("15_4gik4")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m3rqd"]
+material = SubResource("StandardMaterial3D_tdbu1")
+size = Vector2(1, 1)
+
+[resource]
+item/0/name = "Tile_RuntimeHidden"
+item/0/mesh = SubResource("PlaneMesh_sh51m")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/shapes = [SubResource("BoxShape3D_l1fr2"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = "Tile_RuntimeVisible"
+item/1/mesh = SubResource("PlaneMesh_13j8g")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/shapes = [SubResource("BoxShape3D_ba6sk"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = "Tile"
+item/2/mesh = SubResource("PlaneMesh_1ynak")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/shapes = []
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/2/preview = ExtResource("8_7ap8m")
+item/3/name = "TileE"
+item/3/mesh = SubResource("PlaneMesh_8ke4w")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/shapes = []
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1
+item/3/preview = ExtResource("9_yookh")
+item/4/name = "TileEW"
+item/4/mesh = SubResource("PlaneMesh_pgowp")
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/shapes = []
+item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/navigation_layers = 1
+item/4/preview = ExtResource("10_5xstb")
+item/5/name = "TileN"
+item/5/mesh = SubResource("PlaneMesh_wflb2")
+item/5/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/shapes = []
+item/5/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/navigation_layers = 1
+item/5/preview = ExtResource("11_fsdth")
+item/6/name = "TileNE"
+item/6/mesh = SubResource("PlaneMesh_dybf6")
+item/6/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/shapes = []
+item/6/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/navigation_layers = 1
+item/6/preview = ExtResource("12_swvt4")
+item/7/name = "TileNWE"
+item/7/mesh = SubResource("PlaneMesh_6sx1r")
+item/7/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/shapes = []
+item/7/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/navigation_layers = 1
+item/7/preview = ExtResource("13_urxwx")
+item/8/name = "TileNS"
+item/8/mesh = SubResource("PlaneMesh_2sjcx")
+item/8/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/shapes = []
+item/8/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/navigation_layers = 1
+item/8/preview = ExtResource("14_xvsin")
+item/9/name = "TileNSE"
+item/9/mesh = SubResource("PlaneMesh_m3rqd")
+item/9/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/shapes = []
+item/9/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/navigation_layers = 1
+item/9/preview = ExtResource("15_4gik4")
+item/10/name = "TileNSW"
+item/10/mesh = SubResource("PlaneMesh_88wjc")
+item/10/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/shapes = []
+item/10/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/navigation_layers = 1
+item/10/preview = ExtResource("1_clqqk")
+item/11/name = "TileNW"
+item/11/mesh = SubResource("PlaneMesh_lhhah")
+item/11/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/11/shapes = []
+item/11/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/11/navigation_layers = 1
+item/11/preview = ExtResource("2_ltrxx")
+item/12/name = "TileS"
+item/12/mesh = SubResource("PlaneMesh_2txkk")
+item/12/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/12/shapes = []
+item/12/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/12/navigation_layers = 1
+item/12/preview = ExtResource("3_vg6co")
+item/13/name = "TileSE"
+item/13/mesh = SubResource("PlaneMesh_d2te7")
+item/13/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/13/shapes = []
+item/13/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/13/navigation_layers = 1
+item/13/preview = ExtResource("4_v4gpm")
+item/14/name = "TileSWE"
+item/14/mesh = SubResource("PlaneMesh_eelo0")
+item/14/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/14/shapes = []
+item/14/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/14/navigation_layers = 1
+item/14/preview = ExtResource("5_5e130")
+item/15/name = "TileSW"
+item/15/mesh = SubResource("PlaneMesh_wtoor")
+item/15/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/15/shapes = []
+item/15/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/15/navigation_layers = 1
+item/15/preview = ExtResource("6_j054a")
+item/16/name = "TileW"
+item/16/mesh = SubResource("PlaneMesh_q0jtf")
+item/16/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/16/shapes = []
+item/16/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/16/navigation_layers = 1
+item/16/preview = ExtResource("7_rlh05")
