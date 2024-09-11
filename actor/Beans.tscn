@@ -1,6 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://clf20ii4x1sgl"]
-
-[ext_resource type="Script" path="res://actor/Actor.gd" id="1_8cr2f"]
+[gd_scene format=3 uid="uid://clf20ii4x1sgl"]
 
 [node name="Beans" type="Node3D"]
-script = ExtResource("1_8cr2f")

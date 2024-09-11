@@ -104,15 +104,15 @@ func _ready() -> void:
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(-1, -1), true)
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(1, -1), true)
 
-	var beans: Actor = (load("res://actor/Beans.tscn") as PackedScene).instantiate()
-	add_child(beans)
-	beans.grid_pos = Vector3i(-2, 0, -3)
-	beans.action_points = 3
+	var dummy: Actor = (load("res://actor/Dummy.tscn") as PackedScene).instantiate()
+	add_child(dummy)
+	dummy.grid_pos = Vector3i(-2, 0, -3)
+	dummy.action_points = 3
 
 	await get_tree().create_timer(1.0).timeout
 	#reset_display()
 
-	select_actor(beans)
+	select_actor(dummy)
 	await get_tree().create_timer(0.5).timeout
 	show_available_moves()
 	#await get_tree().create_timer(2.0).timeout
