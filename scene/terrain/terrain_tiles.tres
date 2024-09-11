@@ -1,0 +1,59 @@
+[gd_resource type="MeshLibrary" load_steps=11 format=3 uid="uid://6aq0oxjqjxb7"]
+
+[ext_resource type="Material" uid="uid://cvqw21yntrt05" path="res://material/concrete.tres" id="1_uajpr"]
+[ext_resource type="Material" uid="uid://blwcq8cvh1rmm" path="res://material/grass.tres" id="2_0trui"]
+[ext_resource type="Material" uid="uid://86bedn7hw3wt" path="res://material/floor_tiled.tres" id="3_lcv7v"]
+[ext_resource type="Material" uid="uid://b2nwqcq28vw2i" path="res://material/floor_wooden.tres" id="4_hsul7"]
+[ext_resource type="Material" uid="uid://bedy0ajsucxxk" path="res://material/asphalt.tres" id="5_or25e"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qt2r3"]
+material = ExtResource("1_uajpr")
+size = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gwxdx"]
+material = ExtResource("2_0trui")
+size = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d0dho"]
+material = ExtResource("3_lcv7v")
+size = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j4rdm"]
+material = ExtResource("4_hsul7")
+size = Vector2(1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_skh5d"]
+material = ExtResource("5_or25e")
+size = Vector2(1, 1)
+
+[resource]
+item/0/name = "Concrete"
+item/0/mesh = SubResource("PlaneMesh_qt2r3")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/shapes = []
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = "Grass"
+item/1/mesh = SubResource("PlaneMesh_gwxdx")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/shapes = []
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = "FloorTiled"
+item/2/mesh = SubResource("PlaneMesh_d0dho")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/shapes = []
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/3/name = "FloorWooden"
+item/3/mesh = SubResource("PlaneMesh_j4rdm")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/shapes = []
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1
+item/4/name = "Asphalt"
+item/4/mesh = SubResource("PlaneMesh_skh5d")
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/shapes = []
+item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/navigation_layers = 1

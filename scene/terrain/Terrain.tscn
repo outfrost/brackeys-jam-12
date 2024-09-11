@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5cbqpm6lggvv"]
+
+[ext_resource type="MeshLibrary" uid="uid://6aq0oxjqjxb7" path="res://scene/terrain/terrain_tiles.tres" id="1_gutll"]
+
+[node name="Terrain" type="GridMap"]
+mesh_library = ExtResource("1_gutll")
+cell_size = Vector3(1, 2.5, 1)
+cell_center_y = false

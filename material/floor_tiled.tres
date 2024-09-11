@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://86bedn7hw3wt"]
+
+[ext_resource type="Texture2D" uid="uid://d4nikfd1nrlwu" path="res://asset/texture/Tile/31.png" id="1_6vs8s"]
+
+[resource]
+albedo_color = Color(0.816406, 0.816406, 0.816406, 1)
+albedo_texture = ExtResource("1_6vs8s")
+metallic = 0.1
+roughness = 0.75
