@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxt352od8xop"]
+
+[ext_resource type="PackedScene" uid="uid://bklf8edp7lyrq" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenFridgeLarge.glb" id="1_17dlf"]
+
+[node name="kitchenFridgeLarge" instance=ExtResource("1_17dlf")]
+
+[node name="kitchenFridgeLarge(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

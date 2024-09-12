@@ -1,10 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfolp6w6x48xh"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_28gj2"]
-size = Vector3(0.75, 2, 0.75)
+[ext_resource type="PackedScene" uid="uid://btsmoxrkgkse6" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenFridge.glb" id="1_b6rvv"]
 
-[node name="PrefabFridge0" type="Node3D"]
+[node name="kitchenFridge" instance=ExtResource("1_b6rvv")]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, 1, 0)
-mesh = SubResource("BoxMesh_28gj2")
+[node name="kitchenFridge(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 3.393, 0, 0, 0)
