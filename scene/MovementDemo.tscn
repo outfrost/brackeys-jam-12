@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bu45m7nc3wtxd"]
+[gd_scene load_steps=9 format=3 uid="uid://bu45m7nc3wtxd"]
 
+[ext_resource type="Script" path="res://scene/MovementDemo.gd" id="1_5g28t"]
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_xq7ab"]
 [ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/Beans.tscn" id="2_ogsrp"]
+[ext_resource type="PackedScene" uid="uid://cv3goobssds4b" path="res://game/OverheadCamera.tscn" id="3_84ohv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ylv17"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -20,13 +22,14 @@ glow_enabled = true
 size = Vector3(50, 1, 50)
 
 [node name="MovementDemo" type="Node3D"]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_23get")
+script = ExtResource("1_5g28t")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_23get")
 
 [node name="Terrain" parent="." instance=ExtResource("1_xq7ab")]
 data = {
@@ -42,5 +45,4 @@ shape = SubResource("BoxShape3D_kywrw")
 [node name="Beans" parent="." instance=ExtResource("2_ogsrp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.707107, -0.612372, 0.353553, 0, 0.5, 0.866025, -0.707107, -0.612372, 0.353553, 0.5, 2, 0.5)
+[node name="OverheadCamera" parent="." instance=ExtResource("3_84ohv")]
