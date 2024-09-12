@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bllbs1ovh7iwt"]
+[gd_scene load_steps=34 format=3 uid="uid://bllbs1ovh7iwt"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_8g5we"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
@@ -13,12 +13,24 @@
 [ext_resource type="PackedScene" uid="uid://yub8b7yfwru7" path="res://prefabs/Walls/PrefabWallOpenMiddle0.tscn" id="9_db7j1"]
 [ext_resource type="PackedScene" uid="uid://cn3rm580d00ht" path="res://prefabs/WallTunnels/PrefabWallTunnelLower.tscn" id="10_wuloe"]
 [ext_resource type="PackedScene" uid="uid://bsnvldwrqfoxv" path="res://prefabs/WallTunnels/PrefabWallTunnelT.tscn" id="11_abb1w"]
+[ext_resource type="PackedScene" uid="uid://bbk77k7g5pr3w" path="res://prefabs/Objects/kitchen_cabinet.tscn" id="14_55csy"]
 [ext_resource type="PackedScene" uid="uid://bt46s4qm0yr4x" path="res://asset/Kenney_car-kit/Models/GLB format/suv-luxury.glb" id="14_woh7q"]
 [ext_resource type="PackedScene" uid="uid://bsmvmy8ndewgf" path="res://asset/Kenney_car-kit/Models/GLB format/truck-flat.glb" id="15_0dlew"]
+[ext_resource type="PackedScene" uid="uid://bfolp6w6x48xh" path="res://prefabs/Objects/PrefabFridge0.tscn" id="15_lqbd6"]
 [ext_resource type="PackedScene" uid="uid://bye8bu8tbqr1k" path="res://asset/Kenney_car-kit/Models/GLB format/van.glb" id="16_27lem"]
 [ext_resource type="PackedScene" uid="uid://dbbhhlpjiw3lm" path="res://asset/Kenney_car-kit/Models/GLB format/garbage-truck.glb" id="17_ailst"]
-[ext_resource type="PackedScene" uid="uid://bjce1ae33jymo" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenCabinet.glb" id="18_mvicg"]
-[ext_resource type="PackedScene" uid="uid://btsmoxrkgkse6" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenFridge.glb" id="19_ny87a"]
+[ext_resource type="PackedScene" uid="uid://danld87rte7h7" path="res://asset/Kenney_furnature-kit/Models/GLTF format/televisionModern.glb" id="20_yh0yl"]
+[ext_resource type="PackedScene" uid="uid://crblb0gqgsv4y" path="res://asset/Kenney_furnature-kit/Models/GLTF format/cabinetTelevisionDoors.glb" id="21_37wvt"]
+[ext_resource type="PackedScene" uid="uid://dkghc2o8dao85" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeChair.glb" id="23_ytkgr"]
+[ext_resource type="PackedScene" uid="uid://hu0feod8vwdu" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeChairRelax.glb" id="24_tmxwm"]
+[ext_resource type="PackedScene" uid="uid://c2wmig7qwlros" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeDesignChair.glb" id="25_m7av5"]
+[ext_resource type="PackedScene" uid="uid://swxisth31rk1" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeDesignSofaCorner.glb" id="27_j0dri"]
+[ext_resource type="PackedScene" uid="uid://bg2oirlpimnwt" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeSquare.glb" id="28_pj8gq"]
+[ext_resource type="PackedScene" uid="uid://tks5yx7mw63m" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeSofaCorner.glb" id="29_hguxg"]
+[ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/Beans.tscn" id="29_ms1fw"]
+[ext_resource type="PackedScene" uid="uid://82n6mt5vqgdo" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeGlassSquare.glb" id="30_l4evk"]
+[ext_resource type="PackedScene" uid="uid://i37gbv26tr62" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableGlass.glb" id="30_u12p8"]
+[ext_resource type="PackedScene" uid="uid://brifn02a3xw6w" path="res://prefabs/Objects/kitchen_coffee_machine.tscn" id="31_4yr0o"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n75wd"]
 size = Vector3(100, 1, 100)
@@ -1688,6 +1700,12 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.5, 0
 [node name="PrefabDesk5" parent="Furniture" instance=ExtResource("6_5tcfn")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.5, 0, -1.5)
 
+[node name="kitchenCabinet2" parent="Furniture" instance=ExtResource("14_55csy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12.95)
+
+[node name="kitchenFridge" parent="Furniture" instance=ExtResource("15_lqbd6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.95, 0, -12.95)
+
 [node name="Vehicles" type="Node3D" parent="."]
 
 [node name="van" parent="Vehicles" instance=ExtResource("16_27lem")]
@@ -1702,8 +1720,38 @@ transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -4.1, 0, -44.7)
 [node name="garbage-truck" parent="Vehicles" instance=ExtResource("17_ailst")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4)
 
-[node name="kitchenCabinet" parent="." instance=ExtResource("18_mvicg")]
-transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, -8, 0, -12.95)
+[node name="televisionModern" parent="." instance=ExtResource("20_yh0yl")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 8.003, 0.675, -23.677)
 
-[node name="kitchenFridge" parent="." instance=ExtResource("19_ny87a")]
-transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, -8.95, 0, -13.3)
+[node name="cabinetTelevisionDoors" parent="." instance=ExtResource("21_37wvt")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 7.10267, 0, -23.401)
+
+[node name="loungeChair" parent="." instance=ExtResource("23_ytkgr")]
+transform = Transform3D(0.765367, 0, 1.84776, 0, 2, 0, -1.84776, 0, 0.765367, 10.6, 0, -21)
+
+[node name="loungeChairRelax" parent="." instance=ExtResource("24_tmxwm")]
+transform = Transform3D(0.841903, 0, 2.03254, 0, 2.2, 0, -2.03254, 0, 0.841903, 5.1875, 0, -21.625)
+
+[node name="loungeDesignChair" parent="." instance=ExtResource("25_m7av5")]
+transform = Transform3D(-2, 0, -3.77489e-07, 0, 2, 0, 3.01992e-07, 0, -2.5, 11.95, 0, -20.0063)
+
+[node name="loungeDesignSofaCorner" parent="." instance=ExtResource("27_j0dri")]
+transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6.8, 0, -20.8)
+
+[node name="loungeSofaCorner" parent="." instance=ExtResource("29_hguxg")]
+transform = Transform3D(2, 0, 3.49691e-07, 0, 2, 0, -3.49691e-07, 0, 2, 11, 0, -21)
+
+[node name="tableCoffeeGlassSquare" parent="." instance=ExtResource("30_l4evk")]
+transform = Transform3D(-9.61651e-08, 0, 2.2, 0, 2.2, 0, -2.2, 0, -9.61651e-08, 11.7, 0, -22.1)
+
+[node name="tableCoffeeSquare" parent="." instance=ExtResource("28_pj8gq")]
+transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6, 0, -20.7)
+
+[node name="Beans" parent="." instance=ExtResource("29_ms1fw")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.025, 0.25, -23.825)
+
+[node name="tableGlass" parent="." instance=ExtResource("30_u12p8")]
+transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08, 10.05, 0, -19.9438)
+
+[node name="kitchenCoffeeMachine" parent="." instance=ExtResource("31_4yr0o")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -7.55, 1, -13.2)
