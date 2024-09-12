@@ -1,8 +1,15 @@
 class_name Game
 extends Node
 
+const LEVEL_SCN: PackedScene = preload("res://scene/Level01.tscn")
+const OVERHEAD_CAMERA_SCN: PackedScene = preload("res://game/OverheadCamera.tscn")
+const BEANS_SCN: PackedScene = preload("res://actor/Beans.tscn")
+
 @onready var main_menu: Control = $UI/MainMenu
 @onready var transition_screen: TransitionScreen = $UI/TransitionScreen
+@onready var world_container: Node3D = $WorldContainer
+
+var overhead_camera
 
 var debug: RefCounted
 
@@ -23,6 +30,18 @@ func _process(delta: float) -> void:
 
 func on_start_game() -> void:
 	main_menu.hide()
+	var level: = LEVEL_SCN.instantiate()
+	world_container.add_child(level)
+	overhead_camera = OVERHEAD_CAMERA_SCN.instantiate()
+	world_container.add_child(overhead_camera)
+	var beans: = BEANS_SCN.instantiate()
+	level.add_child(beans)
+	beans.global_transform = level.get_node(^"BeansSpawn").global_transform
+	beans.camera_anchor = overhead_camera.anchor
+	overhead_camera.follow = beans
 
 func back_to_menu() -> void:
+	for child in world_container.get_children():
+		child.queue_free()
+	overhead_camera = null
 	main_menu.show()

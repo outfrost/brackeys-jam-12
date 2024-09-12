@@ -5,6 +5,7 @@ const ACCEL: float = 8.0
 const JUMP_VELOCITY: float = 3.0
 
 var enabled: = true
+var camera_anchor: Node3D
 
 func _physics_process(delta: float) -> void:
 	if !enabled:
@@ -17,7 +18,10 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 
 	var input_dir: = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	var direction: = Vector3(input_dir.x, 0, input_dir.y).rotated(Vector3.UP, 0.125 * TAU).normalized()
+	var direction: = Vector3(input_dir.x, 0, input_dir.y).normalized()
+
+	if camera_anchor:
+		direction = direction.rotated(Vector3.UP, camera_anchor.rotation.y)
 
 	if direction.length_squared() > 0.05:
 		var angle: = Vector3.FORWARD.signed_angle_to(direction, Vector3.UP)

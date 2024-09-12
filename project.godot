@@ -94,10 +94,6 @@ rotate_right={
 ]
 }
 
-[physics]
-
-common/physics_fps=160
-
 [rendering]
 
 environment/default_environment="res://default_env.tres"

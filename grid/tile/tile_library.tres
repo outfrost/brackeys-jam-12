@@ -1,4 +1,4 @@
-[gd_resource type="MeshLibrary" load_steps=52 format=3 uid="uid://bvwwe060u3s16"]
+[gd_resource type="MeshLibrary" load_steps=50 format=3 uid="uid://bvwwe060u3s16"]
 
 [ext_resource type="Texture2D" uid="uid://dksd0vxshoji1" path="res://grid/tile/tile_nsw.png" id="1_clqqk"]
 [ext_resource type="Texture2D" uid="uid://c68kkago5se0" path="res://grid/tile/tile_nw.png" id="2_ltrxx"]
@@ -24,9 +24,6 @@ albedo_color = Color(1, 0, 1, 1)
 material = SubResource("StandardMaterial3D_dmk51")
 size = Vector2(1, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_l1fr2"]
-size = Vector3(1, 0.25, 1)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
 blend_mode = 1
 no_depth_test = true
@@ -40,9 +37,6 @@ disable_receive_shadows = true
 [sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
 material = SubResource("StandardMaterial3D_egt4c")
 size = Vector2(1, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ba6sk"]
-size = Vector3(1, 0.25, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcdvf"]
 transparency = 2
@@ -288,13 +282,13 @@ size = Vector2(1, 1)
 item/0/name = "Tile_RuntimeHidden"
 item/0/mesh = SubResource("PlaneMesh_sh51m")
 item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-item/0/shapes = [SubResource("BoxShape3D_l1fr2"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
+item/0/shapes = []
 item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/0/navigation_layers = 1
 item/1/name = "Tile_RuntimeVisible"
 item/1/mesh = SubResource("PlaneMesh_13j8g")
 item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-item/1/shapes = [SubResource("BoxShape3D_ba6sk"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)]
+item/1/shapes = []
 item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/1/navigation_layers = 1
 item/2/name = "Tile"
