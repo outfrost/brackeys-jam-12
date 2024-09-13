@@ -4,10 +4,31 @@ const SPEED: float = 1.0
 const ACCEL: float = 8.0
 const JUMP_VELOCITY: float = 3.0
 
+@onready var visual: Node3D = $Visual
+@onready var prev_transform: Transform3D = transform
+
 var enabled: = true
 var camera_anchor: Node3D
 
+@onready var debug: = Irid.text_overlay.tracker(self)
+
+func _ready() -> void:
+	pass
+	#debug.trace(^"prev_transform")
+	#debug.trace(^"transform")
+
+func _process(delta: float) -> void:
+	# interpolate movement visually
+	visual.transform = (
+		transform.affine_inverse()
+		* prev_transform.interpolate_with(transform, Engine.get_physics_interpolation_fraction())
+	)
+
+	#debug.display("visual:transform: %s" % Irid.text_overlay._str(visual.transform))
+
 func _physics_process(delta: float) -> void:
+	prev_transform = transform
+
 	if !enabled:
 		return
 
