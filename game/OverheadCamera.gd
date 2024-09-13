@@ -3,7 +3,7 @@ extends Node3D
 const POS_LERP_SPEED: float = 8.0
 const ZOOM_LERP_SPEED: float = 8.0
 const ZOOM_MIN_DIST: float = 1.0
-const ZOOM_MAX_DIST: float = 4.0
+const ZOOM_MAX_DIST: float = 8.0
 const ROT_LERP_SPEED: float = 4.0
 
 @onready var anchor: = $CameraAnchor
@@ -11,7 +11,7 @@ const ROT_LERP_SPEED: float = 4.0
 @onready var target_rotation: float = anchor.rotation.y
 
 var follow: Node3D
-var target_zoom_dist: float = 2.0
+var target_zoom_dist: float = 4.0
 
 func _process(delta: float) -> void:
 	var pos_lerp_rate: float = clamp(POS_LERP_SPEED * delta, 0.0, 1.0)

@@ -31,14 +31,20 @@ func _process(delta: float) -> void:
 
 func on_start_game() -> void:
 	main_menu.hide()
+
 	var level: = LEVEL_SCN.instantiate()
 	world_container.add_child(level)
+	var beans_spawn: Node3D = level.get_node(^"BeansSpawn")
+
 	overhead_camera = OVERHEAD_CAMERA_SCN.instantiate()
 	world_container.add_child(overhead_camera)
+	overhead_camera.global_position = beans_spawn.global_position
+
 	var beans: = BEANS_SCN.instantiate()
 	level.add_child(beans)
-	beans.global_transform = level.get_node(^"BeansSpawn").global_transform
+	beans.global_transform = beans_spawn.global_transform
 	beans.camera_anchor = overhead_camera.anchor
+
 	overhead_camera.follow = beans
 
 func back_to_menu() -> void:

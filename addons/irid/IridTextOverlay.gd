@@ -10,15 +10,15 @@ var _trackers: Array[IridTracker] = []
 func _ready():
 	_label.text = ""
 
-	var font_file_path = ProjectSettings.get_setting_with_override("plugins/irid/text_overlay_font")
-	if !font_file_path || !(font_file_path is String):
-		push_error("Missing or invalid project setting 'plugins/irid/text_overlay_font'.")
-		return
-	var font: = load(font_file_path) as Font
-	if !font:
-		push_error("'%s' is not a valid Font resource file. Please check your project settings." % font_file_path)
-		return
-	_label.add_theme_font_override("normal_font", font)
+	#var font_file_path = ProjectSettings.get_setting_with_override("plugins/irid/text_overlay_font")
+	#if !font_file_path || !(font_file_path is String):
+		#push_error("Missing or invalid project setting 'plugins/irid/text_overlay_font'.")
+		#return
+	#var font: = load(font_file_path) as Font
+	#if !font:
+		#push_error("'%s' is not a valid Font resource file. Please check your project settings." % font_file_path)
+		#return
+	#_label.add_theme_font_override("normal_font", font)
 
 	#print(_str(Rect2(10.0, 20.0, 100.0, 200.0)))
 	#print(_str(Rect2i(8, 16, 128, 256)))
