@@ -134,10 +134,10 @@ func get_actors_in_region(region: Region3i) -> Array[Actor]:
 			result.append(actor)
 	return result
 
-func get_actors_in_range(position: Vector3i, radius: int) -> Array[Actor]:
+func get_actors_in_range(pos: Vector3i, radius: int) -> Array[Actor]:
 	var result: Array[Actor] = []
 	for actor in actors:
-		if position.distance_to(actor.grid_pos) <= float(radius):
+		if pos.distance_to(actor.grid_pos) <= float(radius):
 			result.append(actor)
 	return result
 
