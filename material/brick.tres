@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bo7k7k23gomui"]
+
+[ext_resource type="Texture2D" uid="uid://dqlxtykq6y2av" path="res://asset/texture/Bricks/07.png" id="1_dvntw"]
+
+[resource]
+albedo_color = Color(0.75, 0.561, 0.54, 1)
+albedo_texture = ExtResource("1_dvntw")
+metallic = 0.1
+roughness = 0.9
+uv1_scale = Vector3(0.8, 0.8, 0.8)
+uv1_triplanar = true
+uv1_world_triplanar = true

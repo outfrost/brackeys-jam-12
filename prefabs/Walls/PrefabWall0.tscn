@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://saqprhc5hatq"]
+[gd_scene load_steps=3 format=3 uid="uid://saqprhc5hatq"]
+
+[ext_resource type="Material" uid="uid://bo7k7k23gomui" path="res://material/brick.tres" id="1_7256l"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_fu56c"]
+material = ExtResource("1_7256l")
 size = Vector3(1.15, 2.5, 0.15)
 
 [node name="PrefabWall0" type="Node3D"]
