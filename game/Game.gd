@@ -23,7 +23,8 @@ func _ready() -> void:
 	main_menu.start_game.connect(on_start_game)
 
 func _process(delta: float) -> void:
-	DebugOverlay.display("fps %d" % Performance.get_monitor(Performance.TIME_FPS))
+	Irid.text_overlay.display_public("fps %d" % Performance.get_monitor(Performance.TIME_FPS))
+	pass
 
 	if Input.is_action_just_pressed("menu"):
 		back_to_menu()

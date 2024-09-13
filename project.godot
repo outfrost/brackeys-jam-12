@@ -17,8 +17,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-DebugOverlay="*res://game/DebugOverlay.tscn"
+DebugOverlay="res://game/DebugOverlay.tscn"
 Harbinger="*res://game/Harbinger.gd"
+Irid="*res://addons/irid/Irid.tscn"
 
 [debug]
 
@@ -33,6 +34,10 @@ gdscript/warnings/unused_argument=false
 
 window/size/viewport_width=1760
 window/size/viewport_height=990
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/irid/plugin.cfg")
 
 [importer_defaults]
 
