@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bllbs1ovh7iwt"]
+[gd_scene load_steps=36 format=3 uid="uid://bllbs1ovh7iwt"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_8g5we"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
@@ -27,7 +27,6 @@
 [ext_resource type="PackedScene" uid="uid://swxisth31rk1" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeDesignSofaCorner.glb" id="27_j0dri"]
 [ext_resource type="PackedScene" uid="uid://bg2oirlpimnwt" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeSquare.glb" id="28_pj8gq"]
 [ext_resource type="PackedScene" uid="uid://tks5yx7mw63m" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeSofaCorner.glb" id="29_hguxg"]
-[ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/Beans.tscn" id="29_ms1fw"]
 [ext_resource type="PackedScene" uid="uid://82n6mt5vqgdo" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeGlassSquare.glb" id="30_l4evk"]
 [ext_resource type="PackedScene" uid="uid://i37gbv26tr62" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableGlass.glb" id="30_u12p8"]
 [ext_resource type="PackedScene" uid="uid://brifn02a3xw6w" path="res://prefabs/Objects/kitchen_coffee_machine.tscn" id="31_4yr0o"]
@@ -1769,9 +1768,6 @@ transform = Transform3D(-9.61651e-08, 0, 2.2, 0, 2.2, 0, -2.2, 0, -9.61651e-08, 
 
 [node name="tableCoffeeSquare" parent="." instance=ExtResource("28_pj8gq")]
 transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6, 0, -20.7)
-
-[node name="Beans" parent="." instance=ExtResource("29_ms1fw")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.025, 0.25, -23.825)
 
 [node name="tableGlass" parent="." instance=ExtResource("30_u12p8")]
 transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08, 10.05, 0, -19.9438)
