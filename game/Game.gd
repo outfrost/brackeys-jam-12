@@ -1,7 +1,7 @@
 class_name Game
 extends Node
 
-const LEVEL_SCN: PackedScene = preload("res://scene/StealthDemo.tscn")
+const LEVEL_SCN: PackedScene = preload("res://scene/Level01.tscn")
 const OVERHEAD_CAMERA_SCN: PackedScene = preload("res://game/OverheadCamera.tscn")
 const BEANS_SCN: PackedScene = preload("res://actor/Beans.tscn")
 
