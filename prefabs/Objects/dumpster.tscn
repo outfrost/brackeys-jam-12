@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://cm6t860glinhm"]
+
+[ext_resource type="Material" uid="uid://cj3b7dygqr80n" path="res://material/dumpster.tres" id="1_fai4h"]
+[ext_resource type="Material" uid="uid://ckufhrru5g7os" path="res://material/dumpster_lid.tres" id="2_uwt62"]
+[ext_resource type="Material" uid="uid://b8f813fy4jj32" path="res://material/dumpster_trash.tres" id="3_ha7t8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_inh2q"]
+material = ExtResource("2_uwt62")
+size = Vector3(1.1, 0.1, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mnd6r"]
+size = Vector3(2.8, 1.5, 1.4)
+
+[node name="Dumpster" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.6, -0.1)
+size = Vector3(2.5, 1.2, 1.3)
+material = ExtResource("1_fai4h")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0.616433, 0.1)
+operation = 2
+size = Vector3(2.6, 0.4, 1.4)
+material = ExtResource("1_fai4h")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.05, 0)
+operation = 2
+size = Vector3(1.05, 1.1, 1.1)
+material = ExtResource("1_fai4h")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, -0.6, 0.45, 0.05)
+mesh = SubResource("BoxMesh_inh2q")
+skeleton = NodePath("../..")
+
+[node name="Node3D" type="Node3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, -0.258819, 0.965926, 0, -0.965926, -0.258819, 0.6, 0.598821, -0.505407)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGBox3D/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+mesh = SubResource("BoxMesh_inh2q")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGBox3D"]
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.65, -0.1)
+size = Vector3(1.05, 1.1, 1.1)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGBox3D3"]
+transform = Transform3D(0.991445, 5.70548e-09, -0.130526, 0.130526, -4.33374e-08, 0.991445, 0, -1, -4.37114e-08, 0, -0.65, -0.125)
+operation = 1
+radius = 1.0
+material = ExtResource("3_ha7t8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.75, -0.1)
+shape = SubResource("BoxShape3D_mnd6r")

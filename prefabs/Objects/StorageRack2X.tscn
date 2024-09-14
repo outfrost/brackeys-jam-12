@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c754vfcr375x0"]
+
+[ext_resource type="PackedScene" path="res://prefabs/Objects/bookcase_open.tscn" id="1_tyoxq"]
+
+[node name="StorageRack2X" type="Node3D"]
+
+[node name="bookcaseOpen" parent="." instance=ExtResource("1_tyoxq")]
+transform = Transform3D(1.11, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="bookcaseOpen2" parent="." instance=ExtResource("1_tyoxq")]
+transform = Transform3D(1.11, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
