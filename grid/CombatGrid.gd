@@ -5,6 +5,8 @@ extends GridMap
 # * astar space is 2D, with doubled distances,
 #   because of the addition of half-cells to account for obstacles in pathfinding
 
+signal move_ordered(pos)
+
 const TILE_RUNTIME_HIDDEN: int = 0
 const TILE_RUNTIME_VISIBLE: int = 1
 const TILE_BASE: int = 2
@@ -37,9 +39,30 @@ func _ready() -> void:
 
 	var used_cells: = get_used_cells()
 
+	var area_parent: = Node3D.new()
+	add_child(area_parent)
+	var box_shape: = BoxShape3D.new()
+	box_shape.size = Vector3(1.0, 0.2, 1.0)
+
 	var min_coords: = Vector2i.ZERO
 	var max_coords: = Vector2i.ZERO
+
 	for pos in used_cells:
+		var area: = Area3D.new()
+		area.position = Vector3(pos)
+		area.input_ray_pickable = true
+		area_parent.add_child(area)
+		var col_shape: = CollisionShape3D.new()
+		col_shape.position = Vector3(0.5, 0.0, 0.5)
+		col_shape.shape = box_shape
+		area.add_child(col_shape)
+
+		area.mouse_entered.connect(func(): self.cell_hovered(pos))
+		area.mouse_exited.connect(func(): self.cell_unhovered(pos))
+		area.input_event.connect(func(_camera, event: InputEvent, _event_position, _normal, _shape_idx):
+			self.cell_input_event(event, pos)
+		)
+
 		min_coords.x = minf(min_coords.x, pos.x)
 		min_coords.y = minf(min_coords.y, pos.z)
 		max_coords.x = maxf(max_coords.x, pos.x)
@@ -156,6 +179,23 @@ func reset_display() -> void:
 	select_actor(null)
 	for cell in get_used_cells():
 		set_cell_item(cell, TILE_RUNTIME_HIDDEN)
+
+func cell_hovered(pos: Vector3i) -> void:
+	if get_cell_item(pos) == TILE_RUNTIME_VISIBLE:
+		set_cell_item(pos, TILE_RUNTIME_HIGHLIGHT)
+
+func cell_unhovered(pos: Vector3i) -> void:
+	if get_cell_item(pos) == TILE_RUNTIME_HIGHLIGHT:
+		set_cell_item(pos, TILE_RUNTIME_VISIBLE)
+
+func cell_input_event(event: InputEvent, pos: Vector3i) -> void:
+	if (
+		get_cell_item(pos) in [TILE_RUNTIME_VISIBLE, TILE_RUNTIME_HIGHLIGHT]
+		&& event is InputEventMouseButton
+		&& event.button_index == MOUSE_BUTTON_RIGHT
+		&& event.is_pressed()
+	):
+		move_ordered.emit(pos)
 
 func find_reachable_cells(start_pos: Vector3i, max_dist: int) -> Array[Vector3i]:
 	var result: Array[Vector3i] = []

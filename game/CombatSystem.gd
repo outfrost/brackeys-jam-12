@@ -23,6 +23,7 @@ func _ready() -> void:
 func begin_combat(level: Node3D) -> void:
 	grid = level.get_node(^"CombatGrid")
 	assert(grid)
+	grid.move_ordered.connect(actor_move_ordered)
 
 	for actor in grid.actors:
 		if actor.player:
@@ -69,3 +70,6 @@ func begin_turn() -> void:
 		grid.select_actor(actor)
 
 		camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)
+
+func actor_move_ordered(pos: Vector3i) -> void:
+	print(pos)
