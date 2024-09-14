@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://bllbs1ovh7iwt"]
+[gd_scene load_steps=54 format=3 uid="uid://bllbs1ovh7iwt"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_8g5we"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
@@ -36,7 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://brifn02a3xw6w" path="res://prefabs/Objects/kitchen_coffee_machine.tscn" id="31_4yr0o"]
 [ext_resource type="PackedScene" uid="uid://y8dov35qjldk" path="res://prefabs/Objects/kitchen_sink.tscn" id="31_jnn82"]
 [ext_resource type="PackedScene" uid="uid://bqhr2pivsm3p3" path="res://prefabs/Objects/kitchen_microwave.tscn" id="32_5k5xw"]
-[ext_resource type="PackedScene" uid="uid://dei5gh68rehlk" path="res://prefabs/Objects/Boxes.tscn" id="33_0d50d"]
+[ext_resource type="PackedScene" uid="uid://dei5gh68rehlk" path="res://prefabs/Objects/Boxes/01Boxes.tscn" id="33_0d50d"]
 [ext_resource type="PackedScene" uid="uid://ciajal8ak70ba" path="res://prefabs/Objects/kitchen_cabinet_drawer.tscn" id="33_wby52"]
 [ext_resource type="PackedScene" uid="uid://bd1u0rrr6sy56" path="res://prefabs/Objects/kitchen_stove_electric.tscn" id="34_qo8ps"]
 [ext_resource type="PackedScene" uid="uid://1yd2tlyvx81o" path="res://prefabs/Objects/kitchen_cabinet_corner_inner.tscn" id="35_8y3pv"]
@@ -47,6 +47,7 @@
 [ext_resource type="PackedScene" uid="uid://o7e4jrvpdb2o" path="res://prefabs/Objects/StorageRack4X.tscn" id="43_mgiyc"]
 [ext_resource type="PackedScene" uid="uid://4o2njcycgvt8" path="res://prefabs/Objects/StorageRack3X.tscn" id="44_58r8f"]
 [ext_resource type="PackedScene" uid="uid://be1k3bjmwyy7r" path="res://prefabs/Doors/PrefabDoubleDoorClosed0.tscn" id="46_1wydq"]
+[ext_resource type="PackedScene" uid="uid://bxxq5tj6f5wi5" path="res://prefabs/Objects/Boxes/02Boxes.tscn" id="48_apaqm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oackt"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -1893,10 +1894,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0,
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 11, 0, -52.65)
 
 [node name="Boxes" parent="Furniture" instance=ExtResource("33_0d50d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99437, 0, -56.256)
-
-[node name="Boxes2" parent="Furniture" instance=ExtResource("33_0d50d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -56.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09437, 0, -56.206)
 
 [node name="Vehicles" type="Node3D" parent="."]
 
@@ -1943,3 +1941,6 @@ transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6, 0, 
 
 [node name="tableGlass" parent="StuffToReplace" instance=ExtResource("30_u12p8")]
 transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08, 10.05, 0, -19.9438)
+
+[node name="Boxes" parent="." instance=ExtResource("48_apaqm")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.85, 0, -57.1)
