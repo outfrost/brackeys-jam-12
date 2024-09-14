@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://t44yv442xrel"]
+
+[ext_resource type="PackedScene" uid="uid://crblb0gqgsv4y" path="res://asset/Kenney_furnature-kit/Models/GLTF format/cabinetTelevisionDoors.glb" id="1_f4k1m"]
+
+[node name="cabinetTelevisionDoors" instance=ExtResource("1_f4k1m")]
+
+[node name="cabinetTelevisionDoors(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

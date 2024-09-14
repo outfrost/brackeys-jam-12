@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4ctu66c6wt6a"]
+
+[ext_resource type="PackedScene" uid="uid://danld87rte7h7" path="res://asset/Kenney_furnature-kit/Models/GLTF format/televisionModern.glb" id="1_1upb4"]
+
+[node name="televisionModern" instance=ExtResource("1_1upb4")]
+
+[node name="televisionModern(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

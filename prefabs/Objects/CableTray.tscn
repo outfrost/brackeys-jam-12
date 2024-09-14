@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=3 uid="uid://x6f87mdpbva8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b4525"]
+size = Vector3(2, 0.2, 0.6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5sxuo"]
+size = Vector3(2, 0.4, 0.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m8uys"]
+size = Vector3(2, 0.3, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p51br"]
+albedo_color = Color(1, 0.396083, 0.230558, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a6gq0"]
+material = SubResource("StandardMaterial3D_p51br")
+height = 20.0
+
+[node name="CableTray" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.05, -0.0120484)
+shape = SubResource("BoxShape3D_b4525")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Tray" type="Node3D" parent="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Tray"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.1, 0.5)
+mesh = SubResource("BoxMesh_5sxuo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D/Tray"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.1, -0.5)
+mesh = SubResource("BoxMesh_5sxuo")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D/Tray"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.15, 0)
+mesh = SubResource("BoxMesh_m8uys")
+
+[node name="Cables" type="Node3D" parent="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, 0)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, 1)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, 2)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, 3)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, -2)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, -4)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, 4)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, -3)
+mesh = SubResource("CylinderMesh_a6gq0")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D/Cables"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 10, 0, -1)
+mesh = SubResource("CylinderMesh_a6gq0")
