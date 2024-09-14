@@ -40,7 +40,7 @@ void fragment() {
 	float roughness_tex = dot(texture(texture_roughness, base_uv), roughness_texture_channel);
 	ROUGHNESS = roughness_tex * roughness;
 	ALPHA *= albedo.a * albedo_tex.a;
-	
+
 	//ALBEDO.rgb = vec3(FRAGCOORD.z);
 	float depth_fade = (step(texture(depth_in, SCREEN_UV).x, FRAGCOORD.z * 1.001) * 0.9) + 0.1;
 	ALPHA *= depth_fade;
