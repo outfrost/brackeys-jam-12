@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxwrv556w5cfc"]
+
+[ext_resource type="PackedScene" uid="uid://bdcdxql0c4ekx" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeGlass.glb" id="1_re6tf"]
+
+[node name="tableCoffeeGlass" instance=ExtResource("1_re6tf")]
+
+[node name="tableCoffeeGlass(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

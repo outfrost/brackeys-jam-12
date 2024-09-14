@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cww3yfcdq34vu"]
+
+[ext_resource type="PackedScene" uid="uid://tks5yx7mw63m" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeSofaCorner.glb" id="1_8olon"]
+
+[node name="loungeSofaCorner" instance=ExtResource("1_8olon")]
+
+[node name="loungeSofaCorner(Clone)" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

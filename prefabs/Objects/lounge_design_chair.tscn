@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnsrjk1aki4ig"]
+
+[ext_resource type="PackedScene" uid="uid://c2wmig7qwlros" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeDesignChair.glb" id="1_c85rn"]
+
+[node name="loungeDesignChair" instance=ExtResource("1_c85rn")]
+
+[node name="loungeDesignChair(Clone)" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2.5, 0, 0, 0)
