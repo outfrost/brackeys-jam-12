@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://dei5gh68rehlk"]
+
+[ext_resource type="PackedScene" uid="uid://5wlmcd44nngw" path="res://prefabs/Objects/Box.tscn" id="1_mc5hc"]
+
+[node name="Boxes" type="Node3D"]
+
+[node name="Box" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 0.05, 0.3, -0.450001)
+
+[node name="Box2" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 0.55, 0.3, -0.5)
+
+[node name="Box13" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 1.1, 1.95, -0.450001)
+
+[node name="Box14" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 1.6, 1.95, -0.5)
+
+[node name="Box3" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 0.15, 0.85, -0.5)
+
+[node name="Box4" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 0.45, 0.85, -0.450001)
+
+[node name="Box9" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 1.1, 0.85, -0.450001)
+
+[node name="Box10" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 1.6, 0.85, -0.5)
+
+[node name="Box11" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 1.2, 1.4, -0.5)
+
+[node name="Box12" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 1.5, 1.4, -0.450001)
+
+[node name="Box5" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 0.05, 1.4, -0.450001)
+
+[node name="Box6" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 0.55, 1.4, -0.5)
+
+[node name="Box7" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 0.15, 1.95, -0.5)
+
+[node name="Box8" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 0.45, 1.95, -0.450001)
+
+[node name="Box15" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 1.2, 0.3, -0.5)
+
+[node name="Box16" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 1.5, 0.3, -0.450001)
+
+[node name="Box17" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 2.05, 0.3, -0.450001)
+
+[node name="Box18" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 2.55, 0.3, -0.5)
+
+[node name="Box19" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 3.1, 1.95, -0.450001)
+
+[node name="Box20" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 3.6, 1.95, -0.5)
+
+[node name="Box21" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 2.15, 0.85, -0.5)
+
+[node name="Box22" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 2.45, 0.85, -0.450001)
+
+[node name="Box23" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 3.1, 0.85, -0.450001)
+
+[node name="Box24" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 3.6, 0.85, -0.5)
+
+[node name="Box25" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 3.2, 1.4, -0.5)
+
+[node name="Box26" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 3.5, 1.4, -0.450001)
+
+[node name="Box27" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 2.05, 1.4, -0.450001)
+
+[node name="Box28" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 2.55, 1.4, -0.5)
+
+[node name="Box29" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 2.15, 1.95, -0.5)
+
+[node name="Box30" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 2.45, 1.95, -0.450001)
+
+[node name="Box31" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 3.2, 0.3, -0.5)
+
+[node name="Box32" parent="." instance=ExtResource("1_mc5hc")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, 3.5, 0.3, -0.450001)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bllbs1ovh7iwt"]
+[gd_scene load_steps=53 format=3 uid="uid://bllbs1ovh7iwt"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_8g5we"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://brifn02a3xw6w" path="res://prefabs/Objects/kitchen_coffee_machine.tscn" id="31_4yr0o"]
 [ext_resource type="PackedScene" uid="uid://y8dov35qjldk" path="res://prefabs/Objects/kitchen_sink.tscn" id="31_jnn82"]
 [ext_resource type="PackedScene" uid="uid://bqhr2pivsm3p3" path="res://prefabs/Objects/kitchen_microwave.tscn" id="32_5k5xw"]
+[ext_resource type="PackedScene" uid="uid://dei5gh68rehlk" path="res://prefabs/Objects/Boxes.tscn" id="33_0d50d"]
 [ext_resource type="PackedScene" uid="uid://ciajal8ak70ba" path="res://prefabs/Objects/kitchen_cabinet_drawer.tscn" id="33_wby52"]
 [ext_resource type="PackedScene" uid="uid://bd1u0rrr6sy56" path="res://prefabs/Objects/kitchen_stove_electric.tscn" id="34_qo8ps"]
 [ext_resource type="PackedScene" uid="uid://1yd2tlyvx81o" path="res://prefabs/Objects/kitchen_cabinet_corner_inner.tscn" id="35_8y3pv"]
@@ -1730,6 +1731,18 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 0, 
 [node name="PrefabDoor2" parent="Buildings" instance=ExtResource("13_bldu6")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -2)
 
+[node name="PrefabDoor4" parent="Buildings" instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -17)
+
+[node name="PrefabDoor5" parent="Buildings" instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -50)
+
+[node name="PrefabDoor7" parent="Buildings" instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -54)
+
+[node name="PrefabDoubleDoor3" parent="Buildings" instance=ExtResource("46_1wydq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 35, 0, -59)
+
 [node name="Furniture" type="Node3D" parent="."]
 
 [node name="PrefabDesk0" parent="Furniture" instance=ExtResource("6_5tcfn")]
@@ -1810,6 +1823,81 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35,
 [node name="bookcaseOpen7" parent="Furniture" instance=ExtResource("20_v6xoh")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -47.1)
 
+[node name="kitchenSink" parent="Furniture" instance=ExtResource("31_jnn82")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -12.95)
+
+[node name="kitchenMicrowave" parent="Furniture" instance=ExtResource("32_5k5xw")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, -7.75, 0.92, -13.15)
+
+[node name="kitchenCabinetDrawer" parent="Furniture" instance=ExtResource("33_wby52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -12.95)
+
+[node name="kitchenStoveElectric" parent="Furniture" instance=ExtResource("34_qo8ps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -12.95)
+
+[node name="kitchenCabinetCornerInner" parent="Furniture" instance=ExtResource("35_8y3pv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12.928)
+
+[node name="kitchenBlender" parent="Furniture" instance=ExtResource("36_50hmr")]
+transform = Transform3D(0.866026, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866026, -3.75, 0.9, -13.55)
+
+[node name="kitchenBarEnd" parent="Furniture" instance=ExtResource("37_f5ekl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.715)
+
+[node name="kitchenBar" parent="Furniture" instance=ExtResource("38_x4gec")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -11.95)
+
+[node name="kitchenBar2" parent="Furniture" instance=ExtResource("38_x4gec")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.95)
+
+[node name="StorageRackX4" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.05, 0, -51.35)
+
+[node name="StorageRackX5" parent="Furniture" instance=ExtResource("44_58r8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.05, 0, -51.35)
+
+[node name="StorageRackX6" parent="Furniture" instance=ExtResource("44_58r8f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.65, 0, -46.5)
+
+[node name="StorageRackX7" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -64.9)
+
+[node name="StorageRackX8" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -60.9)
+
+[node name="StorageRackX9" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, -64.9)
+
+[node name="StorageRackX10" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 11, 0, -64.9)
+
+[node name="StorageRackX11" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0, -64.9)
+
+[node name="StorageRackX12" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, -60.9)
+
+[node name="StorageRackX13" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 11, 0, -60.9)
+
+[node name="StorageRackX14" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, -56.9)
+
+[node name="StorageRackX15" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 11, 0, -56.9)
+
+[node name="StorageRackX16" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, -52.65)
+
+[node name="StorageRackX17" parent="Furniture" instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 11, 0, -52.65)
+
+[node name="Boxes" parent="Furniture" instance=ExtResource("33_0d50d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99437, 0, -56.256)
+
+[node name="Boxes2" parent="Furniture" instance=ExtResource("33_0d50d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -56.3)
+
 [node name="Vehicles" type="Node3D" parent="."]
 
 [node name="garbage-truck" parent="Vehicles" instance=ExtResource("16_q68dx")]
@@ -1824,86 +1912,34 @@ transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -7, 0, -45)
 [node name="truck-flat" parent="Vehicles" instance=ExtResource("19_w4bmk")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -4.1, 0, -44.7)
 
-[node name="televisionModern" parent="." instance=ExtResource("20_yh0yl")]
+[node name="StuffToReplace" type="Node3D" parent="."]
+
+[node name="televisionModern" parent="StuffToReplace" instance=ExtResource("20_yh0yl")]
 transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 8.003, 0.675, -23.677)
 
-[node name="cabinetTelevisionDoors" parent="." instance=ExtResource("21_37wvt")]
+[node name="cabinetTelevisionDoors" parent="StuffToReplace" instance=ExtResource("21_37wvt")]
 transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 7.10267, 0, -23.401)
 
-[node name="loungeChair" parent="." instance=ExtResource("23_ytkgr")]
+[node name="loungeChair" parent="StuffToReplace" instance=ExtResource("23_ytkgr")]
 transform = Transform3D(0.765367, 0, 1.84776, 0, 2, 0, -1.84776, 0, 0.765367, 10.6, 0, -21)
 
-[node name="loungeChairRelax" parent="." instance=ExtResource("24_tmxwm")]
+[node name="loungeChairRelax" parent="StuffToReplace" instance=ExtResource("24_tmxwm")]
 transform = Transform3D(0.841903, 0, 2.03254, 0, 2.2, 0, -2.03254, 0, 0.841903, 5.1875, 0, -21.625)
 
-[node name="loungeDesignChair" parent="." instance=ExtResource("25_m7av5")]
+[node name="loungeDesignChair" parent="StuffToReplace" instance=ExtResource("25_m7av5")]
 transform = Transform3D(-2, 0, -3.77489e-07, 0, 2, 0, 3.01992e-07, 0, -2.5, 11.95, 0, -20.0063)
 
-[node name="loungeDesignSofaCorner" parent="." instance=ExtResource("27_j0dri")]
+[node name="loungeDesignSofaCorner" parent="StuffToReplace" instance=ExtResource("27_j0dri")]
 transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6.8, 0, -20.8)
 
-[node name="loungeSofaCorner" parent="." instance=ExtResource("29_hguxg")]
+[node name="loungeSofaCorner" parent="StuffToReplace" instance=ExtResource("29_hguxg")]
 transform = Transform3D(2, 0, 3.49691e-07, 0, 2, 0, -3.49691e-07, 0, 2, 11, 0, -21)
 
-[node name="tableCoffeeGlassSquare" parent="." instance=ExtResource("30_l4evk")]
+[node name="tableCoffeeGlassSquare" parent="StuffToReplace" instance=ExtResource("30_l4evk")]
 transform = Transform3D(-9.61651e-08, 0, 2.2, 0, 2.2, 0, -2.2, 0, -9.61651e-08, 11.7, 0, -22.1)
 
-[node name="tableCoffeeSquare" parent="." instance=ExtResource("28_pj8gq")]
+[node name="tableCoffeeSquare" parent="StuffToReplace" instance=ExtResource("28_pj8gq")]
 transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6, 0, -20.7)
 
-[node name="tableGlass" parent="." instance=ExtResource("30_u12p8")]
+[node name="tableGlass" parent="StuffToReplace" instance=ExtResource("30_u12p8")]
 transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08, 10.05, 0, -19.9438)
-
-[node name="kitchenSink" parent="." instance=ExtResource("31_jnn82")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -12.95)
-
-[node name="kitchenMicrowave" parent="." instance=ExtResource("32_5k5xw")]
-transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, -7.75, 0.92, -13.15)
-
-[node name="kitchenCabinetDrawer" parent="." instance=ExtResource("33_wby52")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -12.95)
-
-[node name="kitchenStoveElectric" parent="." instance=ExtResource("34_qo8ps")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -12.95)
-
-[node name="kitchenCabinetCornerInner" parent="." instance=ExtResource("35_8y3pv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12.928)
-
-[node name="kitchenBlender" parent="." instance=ExtResource("36_50hmr")]
-transform = Transform3D(0.866026, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866026, -3.75, 0.9, -13.55)
-
-[node name="kitchenBarEnd" parent="." instance=ExtResource("37_f5ekl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.715)
-
-[node name="kitchenBar" parent="." instance=ExtResource("38_x4gec")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -11.95)
-
-[node name="kitchenBar2" parent="." instance=ExtResource("38_x4gec")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.95)
-
-[node name="StorageRackX4" parent="." instance=ExtResource("43_mgiyc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.05, 0, -51.35)
-
-[node name="StorageRackX5" parent="." instance=ExtResource("44_58r8f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.05, 0, -51.35)
-
-[node name="StorageRackX6" parent="." instance=ExtResource("44_58r8f")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.65, 0, -46.5)
-
-[node name="StorageRackX7" parent="." instance=ExtResource("43_mgiyc")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -64.9)
-
-[node name="StorageRackX8" parent="." instance=ExtResource("43_mgiyc")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -60.9)
-
-[node name="PrefabDoor0" parent="." instance=ExtResource("13_bldu6")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -17)
-
-[node name="PrefabDoor1" parent="." instance=ExtResource("13_bldu6")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -50)
-
-[node name="PrefabDoor2" parent="." instance=ExtResource("13_bldu6")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -54)
-
-[node name="PrefabDoubleDoor0" parent="." instance=ExtResource("46_1wydq")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 35, 0, -59)
