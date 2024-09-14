@@ -1,12 +1,36 @@
-[gd_scene format=3 uid="uid://dqc68n6rq25v4"]
+[gd_scene load_steps=4 format=3 uid="uid://dqc68n6rq25v4"]
+
+[ext_resource type="Material" uid="uid://bo7k7k23gomui" path="res://material/brick.tres" id="1_2k8wt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lvwgd"]
+size = Vector3(1.15, 0.5, 0.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cilp8"]
+size = Vector3(0.2, 2, 0.15)
 
 [node name="PrefabDoor0" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.25, 0)
 size = Vector3(1.15, 2.5, 0.15)
+material = ExtResource("1_2k8wt")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 operation = 2
 size = Vector3(0.75, 2, 0.15)
+material = ExtResource("1_2k8wt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.25, 0)
+shape = SubResource("BoxShape3D_lvwgd")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025, 1, 0)
+shape = SubResource("BoxShape3D_cilp8")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.975, 1, 0)
+shape = SubResource("BoxShape3D_cilp8")

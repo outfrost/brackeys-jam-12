@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://saqprhc5hatq"]
+[gd_scene load_steps=4 format=3 uid="uid://saqprhc5hatq"]
 
 [ext_resource type="Material" uid="uid://bo7k7k23gomui" path="res://material/brick.tres" id="1_7256l"]
 
@@ -6,8 +6,17 @@
 material = ExtResource("1_7256l")
 size = Vector3(1.15, 2.5, 0.15)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5njky"]
+size = Vector3(1.15, 2.5, 0.15)
+
 [node name="PrefabWall0" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.25, 0)
 mesh = SubResource("BoxMesh_fu56c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.25, 0)
+shape = SubResource("BoxShape3D_5njky")

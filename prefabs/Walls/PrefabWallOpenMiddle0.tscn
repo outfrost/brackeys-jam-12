@@ -1,12 +1,44 @@
-[gd_scene format=3 uid="uid://yub8b7yfwru7"]
+[gd_scene load_steps=6 format=3 uid="uid://yub8b7yfwru7"]
+
+[ext_resource type="Material" uid="uid://bo7k7k23gomui" path="res://material/brick.tres" id="1_2uoea"]
+[ext_resource type="Material" uid="uid://cdetcfbphcj5x" path="res://material/vent.tres" id="2_h81kr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jaavl"]
+size = Vector3(0.425, 2.5, 0.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a0pvr"]
+size = Vector3(0.3, 0.86, 0.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iy0ge"]
+size = Vector3(0.3, 1.35, 0.15)
 
 [node name="PrefabWallOpenMiddle0" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.25, 0)
 size = Vector3(1.15, 2.5, 0.15)
+material = ExtResource("1_2uoea")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 operation = 2
 size = Vector3(0.25, 0.25, 0.15)
+material = ExtResource("2_h81kr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.138, 1.25, 0)
+shape = SubResource("BoxShape3D_jaavl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.863, 1.25, 0)
+shape = SubResource("BoxShape3D_jaavl")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.43, 0)
+shape = SubResource("BoxShape3D_a0pvr")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.825, 0)
+shape = SubResource("BoxShape3D_iy0ge")

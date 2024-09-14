@@ -1,6 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://ch62v3j43757h"]
+[gd_scene load_steps=5 format=3 uid="uid://ch62v3j43757h"]
 
 [ext_resource type="PackedScene" uid="uid://dbbhhlpjiw3lm" path="res://asset/Kenney_car-kit/Models/GLB format/garbage-truck.glb" id="1_72ok6"]
+[ext_resource type="Texture2D" uid="uid://dsyeepqh5vvhu" path="res://asset/Kenney_car-kit/Models/GLB format/Textures/colormap.png" id="2_4xusr"]
+[ext_resource type="Texture2D" uid="uid://8ptnyqnwgbn7" path="res://asset/Kenney_car-kit/Models/GLB format/Textures/emission.png" id="3_wdtv1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8bxo"]
+resource_name = "colormap"
+cull_mode = 2
+albedo_texture = ExtResource("2_4xusr")
+emission_enabled = true
+emission_energy_multiplier = 3.0
+emission_texture = ExtResource("3_wdtv1")
+texture_filter = 2
 
 [node name="garbage-truck" instance=ExtResource("1_72ok6")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="body" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_f8bxo")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="6"]
+transform = Transform3D(0.714286, 0, 0, 0, -0.703434, 0.124034, 0, -0.124034, -0.703434, 0, 0.643, 1.643)
+shadow_enabled = true
+shadow_bias = 0.02
+distance_fade_enabled = true
+distance_fade_begin = 10.0
+distance_fade_shadow = 40.0
+distance_fade_length = 20.0
+spot_angle = 37.0
+spot_angle_attenuation = 1.5

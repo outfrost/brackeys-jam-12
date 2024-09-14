@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsnvldwrqfoxv"]
+[gd_scene load_steps=3 format=3 uid="uid://bsnvldwrqfoxv"]
+
+[ext_resource type="Material" uid="uid://cdetcfbphcj5x" path="res://material/vent.tres" id="1_4qe3x"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_uknqu"]
+material = ExtResource("1_4qe3x")
 
 [node name="PrefabWallTunnelT" type="Node3D"]
 

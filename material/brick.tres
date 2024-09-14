@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dqlxtykq6y2av" path="res://asset/texture/Bricks/07.png" id="1_dvntw"]
 
 [resource]
-albedo_color = Color(0.75, 0.561, 0.54, 1)
+albedo_color = Color(0.74902, 0.560784, 0.541176, 1)
 albedo_texture = ExtResource("1_dvntw")
 metallic = 0.1
 roughness = 0.9
