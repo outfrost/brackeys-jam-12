@@ -2,8 +2,8 @@ extends Node3D
 
 const POS_LERP_SPEED: float = 8.0
 const ZOOM_LERP_SPEED: float = 8.0
-const ZOOM_MIN_DIST: float = 1.0
-const ZOOM_MAX_DIST: float = 8.0
+const ZOOM_MIN_DIST: float = 1.5
+const ZOOM_MAX_DIST: float = 10.0
 const ROT_LERP_SPEED: float = 4.0
 
 @onready var anchor: = $CameraAnchor
