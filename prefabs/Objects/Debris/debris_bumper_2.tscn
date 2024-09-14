@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://3bv1mkj5wu3q"]
+
+[ext_resource type="PackedScene" uid="uid://d2ji5ba8njhi0" path="res://asset/Kenney_car-kit/Models/GLB format/debris-bumper.glb" id="1_kh3ml"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m502s"]
+points = PackedVector3Array(-0.65, 0.1, -0.225, -0.450088, 0, 0.174961, -0.65, 0.1, 0.0749706, -0.65, 0.3, -0.225, 0.65, 0.1, -0.225, -0.450088, 0.0146437, 0.210332, -0.620732, 0.1, 0.145669, 0.449961, 0, 0.174961, -0.65, 0.3, 0.0749706, -0.450088, 0.4, 0.174961, 0.65, 0.3, -0.225, 0.65, 0.1, 0.0749706, -0.450088, 0.05, 0.225, 0.449961, 0.0146437, 0.210332, -0.620732, 0.3, 0.145669, 0.620605, 0.1, 0.145669, -0.450088, 0.385317, 0.210332, 0.449961, 0.4, 0.174961, 0.65, 0.3, 0.0749706, -0.450088, 0.35, 0.225, 0.449961, 0.05, 0.225, 0.620605, 0.3, 0.145669, 0.449961, 0.385317, 0.210332, 0.449961, 0.35, 0.225)
+
+[node name="debris-bumper2" instance=ExtResource("1_kh3ml")]
+
+[node name="debris-bumper" parent="." index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_m502s")

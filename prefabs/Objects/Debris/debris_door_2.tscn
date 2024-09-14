@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccpnneng76me"]
+
+[ext_resource type="PackedScene" uid="uid://btgs3a4fgcsxa" path="res://asset/Kenney_car-kit/Models/GLB format/debris-door.glb" id="1_xwnfr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iff2h"]
+size = Vector3(0.23584, 1.27695, 1.15)
+
+[node name="debris-door2" instance=ExtResource("1_xwnfr")]
+
+[node name="debris-door" parent="." index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0179199, 0.636523, 0)
+shape = SubResource("BoxShape3D_iff2h")

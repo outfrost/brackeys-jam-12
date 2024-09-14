@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd3sg0i4f6tnr"]
+
+[ext_resource type="PackedScene" uid="uid://vvm3t2efmtgn" path="res://asset/Kenney_car-kit/Models/GLB format/debris-plate-small-a.glb" id="1_msggj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wiy5n"]
+size = Vector3(0.639319, 0.15, 0.633618)
+
+[node name="debris-plate-small-a" instance=ExtResource("1_msggj")]
+
+[node name="debris-plate-small-a" parent="." index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0122986, 0.075, -0.00496832)
+shape = SubResource("BoxShape3D_wiy5n")

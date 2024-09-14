@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://do1s3yn5dx0ju"]
+
+[ext_resource type="PackedScene" uid="uid://dfui7yx0cft5q" path="res://asset/Kenney_car-kit/Models/GLB format/debris-drivetrain-axle.glb" id="1_cc7k7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gi6af"]
+size = Vector3(1.7, 0.35, 0.45)
+
+[node name="debris-drivetrain-axle2" instance=ExtResource("1_cc7k7")]
+
+[node name="debris-drivetrain-axle" parent="." index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.225, -0.025)
+shape = SubResource("BoxShape3D_gi6af")
