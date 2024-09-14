@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7vx5ieb7qfmp"]
+
+[ext_resource type="PackedScene" uid="uid://bod5vjsbshllx" path="res://asset/Kenney_furnature-kit/Models/GLTF format/stoolBar.glb" id="1_k1i53"]
+
+[node name="stoolBar" instance=ExtResource("1_k1i53")]
+
+[node name="stoolBar(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

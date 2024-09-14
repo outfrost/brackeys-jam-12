@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clk2q5458y3a1"]
+
+[ext_resource type="PackedScene" uid="uid://cb0vd1i4flcrs" path="res://asset/Kenney_furnature-kit/Models/GLTF format/laptop.glb" id="1_44gng"]
+
+[node name="laptop" instance=ExtResource("1_44gng")]
+
+[node name="laptop(Clone)" parent="." index="0"]
+transform = Transform3D(0.968, 0, 0, 0, 0.968, 0, 0, 0, 0.968, 0, 0, 0)

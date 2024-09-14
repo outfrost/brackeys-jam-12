@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsrtmnqwtb1fi"]
+
+[ext_resource type="PackedScene" uid="uid://bsmvmy8ndewgf" path="res://asset/Kenney_car-kit/Models/GLB format/truck-flat.glb" id="1_cqi1t"]
+
+[node name="truck-flat" instance=ExtResource("1_cqi1t")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)

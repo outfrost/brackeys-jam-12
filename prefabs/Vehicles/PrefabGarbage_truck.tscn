@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch62v3j43757h"]
+
+[ext_resource type="PackedScene" uid="uid://dbbhhlpjiw3lm" path="res://asset/Kenney_car-kit/Models/GLB format/garbage-truck.glb" id="1_72ok6"]
+
+[node name="garbage-truck" instance=ExtResource("1_72ok6")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)

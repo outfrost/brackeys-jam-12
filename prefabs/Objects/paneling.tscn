@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn13h4xfoe5sj"]
+
+[ext_resource type="PackedScene" uid="uid://dwlttqpyvb01d" path="res://asset/Kenney_furnature-kit/Models/GLTF format/paneling.glb" id="1_p6x4j"]
+
+[node name="paneling" instance=ExtResource("1_p6x4j")]
+
+[node name="paneling(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)

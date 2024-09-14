@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://lxcep3sobsnq"]
+
+[ext_resource type="PackedScene" uid="uid://bt46s4qm0yr4x" path="res://asset/Kenney_car-kit/Models/GLB format/suv-luxury.glb" id="1_v0fk8"]
+
+[node name="suv-luxury" instance=ExtResource("1_v0fk8")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)

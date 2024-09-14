@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd1u0rrr6sy56"]
+
+[ext_resource type="PackedScene" uid="uid://c0gqeoixe8u84" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenStoveElectric.glb" id="1_hsoi0"]
+
+[node name="kitchenStoveElectric" instance=ExtResource("1_hsoi0")]
+
+[node name="kitchenStoveElectric(Clone)" parent="." index="0"]
+transform = Transform3D(2.33, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
