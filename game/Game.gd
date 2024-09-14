@@ -1,9 +1,11 @@
 class_name Game
 extends Node
 
-const LEVEL_SCN: PackedScene = preload("res://scene/Level01.tscn")
+const LEVEL_SCN: PackedScene = preload("res://scene/StealthDemo.tscn")
 const OVERHEAD_CAMERA_SCN: PackedScene = preload("res://game/OverheadCamera.tscn")
-const BEANS_SCN: PackedScene = preload("res://actor/Beans.tscn")
+const COMBAT_CAMERA_LEAD_SCN: PackedScene = preload("res://game/CombatCameraLead.tscn")
+const COMBAT_SYSTEM_SCN: PackedScene = preload("res://game/CombatSystem.tscn")
+const BEANS_SCN: PackedScene = preload("res://actor/pc/Beans.tscn")
 
 @onready var main_menu: Control = $UI/MainMenu
 @onready var transition_screen: TransitionScreen = $UI/TransitionScreen
@@ -11,6 +13,9 @@ const BEANS_SCN: PackedScene = preload("res://actor/Beans.tscn")
 
 var level: Node3D
 var overhead_camera
+var combat_camera_lead
+var combat_grid: CombatGrid
+var combat_system
 
 var debug: RefCounted
 
@@ -36,11 +41,21 @@ func on_start_game() -> void:
 
 	level = LEVEL_SCN.instantiate()
 	world_container.add_child(level)
+	combat_grid = level.get_node(^"CombatGrid")
 	var beans_spawn: Node3D = level.get_node(^"BeansSpawn")
 
 	overhead_camera = OVERHEAD_CAMERA_SCN.instantiate()
 	world_container.add_child(overhead_camera)
 	overhead_camera.global_position = beans_spawn.global_position
+
+	combat_camera_lead = COMBAT_CAMERA_LEAD_SCN.instantiate()
+	world_container.add_child(combat_camera_lead)
+	combat_camera_lead.limits = combat_grid.grid_limits
+	combat_camera_lead.camera_anchor = overhead_camera.anchor
+
+	combat_system = COMBAT_SYSTEM_SCN.instantiate()
+	world_container.add_child(combat_system)
+	combat_system.camera_lead = combat_camera_lead
 
 	var beans: = BEANS_SCN.instantiate()
 	level.add_child(beans)
@@ -68,5 +83,8 @@ func stealth_objective_reached(_ignore) -> void:
 
 	await get_tree().create_timer(5.0).timeout
 
-	overhead_camera.follow = level
+	combat_grid.prepare_combat()
+	combat_system.begin_combat(level)
 	overhead_camera.controls_enabled = true
+	overhead_camera.follow = combat_camera_lead
+	combat_camera_lead.enabled = true

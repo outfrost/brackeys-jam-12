@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://clxjw3jar4dfl"]
 
-[ext_resource type="Script" path="res://actor/Soldier.gd" id="1_rk24p"]
-[ext_resource type="Resource" uid="uid://b0igvg55rxr7q" path="res://actor/detection_normal.tres" id="2_vn72l"]
+[ext_resource type="Script" path="res://actor/npc/Soldier.gd" id="1_rk24p"]
+[ext_resource type="Resource" uid="uid://b0igvg55rxr7q" path="res://actor/npc/detection_normal.tres" id="2_vn72l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tjhgm"]
 radius = 0.3

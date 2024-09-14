@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DetectionProfile" load_steps=2 format=3 uid="uid://b0igvg55rxr7q"]
 
-[ext_resource type="Script" path="res://actor/DetectionProfile.gd" id="1_shq6p"]
+[ext_resource type="Script" path="res://actor/npc/DetectionProfile.gd" id="1_shq6p"]
 
 [resource]
 script = ExtResource("1_shq6p")

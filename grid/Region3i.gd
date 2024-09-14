@@ -22,3 +22,10 @@ func contains_point(point: Vector3i) -> bool:
 		&& point.z >= position.z
 		&& point.z <= position.z + size.z
 	)
+
+func clamp_point(point: Vector3) -> Vector3:
+	return Vector3(
+		clampf(point.x, position.x, position.x + size.x),
+		clampf(point.y, position.y, position.y + size.y),
+		clampf(point.z, position.z, position.z + size.z)
+	)

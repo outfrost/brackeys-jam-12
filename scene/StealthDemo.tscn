@@ -1,9 +1,11 @@
-[gd_scene load_steps=38 format=3 uid="uid://b57knuh2klkpb"]
+[gd_scene load_steps=40 format=3 uid="uid://b57knuh2klkpb"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_mit4x"]
 [ext_resource type="PackedScene" uid="uid://bp040d46ib7jf" path="res://grid/CombatGrid.tscn" id="2_j3628"]
-[ext_resource type="PackedScene" uid="uid://clxjw3jar4dfl" path="res://actor/Soldier.tscn" id="3_02bae"]
+[ext_resource type="PackedScene" uid="uid://clxjw3jar4dfl" path="res://actor/npc/Soldier.tscn" id="3_02bae"]
+[ext_resource type="PackedScene" uid="uid://dcggndy725g72" path="res://actor/ActorAka.tscn" id="3_t7e43"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="4_28ahd"]
+[ext_resource type="PackedScene" uid="uid://padw1witry5r" path="res://actor/ActorNozomi.tscn" id="4_ajw13"]
 [ext_resource type="PackedScene" uid="uid://uqkmoi2iexr2" path="res://scene/objective/StealthObjective.tscn" id="4_kiydr"]
 [ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="5_u4f3k"]
 [ext_resource type="PackedScene" uid="uid://cajap0afge4hp" path="res://prefabs/Doors/PrefabDoubleDoor0.tscn" id="6_k1uh4"]
@@ -80,8 +82,18 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
+[node name="ActorAka" parent="CombatGrid" instance=ExtResource("3_t7e43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -8)
+visible = false
+grid_pos = Vector3i(-3, 0, -8)
+
+[node name="ActorNozomi" parent="CombatGrid" instance=ExtResource("4_ajw13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -7)
+visible = false
+grid_pos = Vector3i(-3, 0, -7)
+
 [node name="BeansSpawn" type="Marker3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, -11.5)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, -15.5)
 
 [node name="Soldier" parent="." instance=ExtResource("3_02bae")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 3, 0, -15)

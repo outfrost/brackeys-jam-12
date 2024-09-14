@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://padw1witry5r"]
+
+[ext_resource type="Script" path="res://actor/Actor.gd" id="1_xjpd2"]
+[ext_resource type="PackedScene" uid="uid://c5en7io0degqb" path="res://actor/pc/Nozomi.tscn" id="2_fxq6w"]
+
+[node name="ActorNozomi" type="Node3D"]
+script = ExtResource("1_xjpd2")
+player = true
+actor_name = "Nozomi"
+starting_action_points = 8
+
+[node name="Nozomi" parent="." instance=ExtResource("2_fxq6w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)

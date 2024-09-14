@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://clf20ii4x1sgl"]
 
 [ext_resource type="Material" uid="uid://cxw3li7obmem8" path="res://material/dummy.tres" id="1_w24sw"]
-[ext_resource type="Script" path="res://actor/Beans.gd" id="1_y1v8i"]
+[ext_resource type="Script" path="res://actor/pc/Beans.gd" id="1_y1v8i"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mtdaw"]
 radius = 0.1

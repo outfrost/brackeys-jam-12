@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://s1qgviufrxvb"]
 
-[ext_resource type="Script" path="res://actor/RaycastVis.gd" id="1_qkeum"]
+[ext_resource type="Script" path="res://actor/npc/RaycastVis.gd" id="1_qkeum"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_ap4ie"]
 radius = 0.025

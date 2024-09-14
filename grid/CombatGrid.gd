@@ -1,3 +1,4 @@
+class_name CombatGrid
 extends GridMap
 # there are two coordinate spaces in use here:
 # * grid space is 3D, with distances same as in world
@@ -25,6 +26,7 @@ const TILE_W: int = 16
 var astar: = AStarGrid2D.new()
 var actors: Array[Actor] = []
 var selected_actor: Actor
+var grid_limits: Region3i
 
 func _ready() -> void:
 	mesh_library.get_item_mesh(0).surface_set_material(0, load("res://material/invisible.tres"))
@@ -41,6 +43,11 @@ func _ready() -> void:
 		min_coords.y = minf(min_coords.y, pos.z)
 		max_coords.x = maxf(max_coords.x, pos.x)
 		max_coords.y = maxf(max_coords.y, pos.z)
+
+	grid_limits = Region3i.from_coords(
+		min_coords.x, 0, min_coords.y,
+		max_coords.x - min_coords.x, 0, max_coords.y - min_coords.y
+	)
 
 	# adding (1, 1) because AStarGrid2D uses Rect2i.size as end-exclusive
 	max_coords += Vector2i.ONE
@@ -105,27 +112,15 @@ func _ready() -> void:
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(-1, -1), true)
 					astar.set_point_solid(grid_to_astar(pos) + Vector2i(1, -1), true)
 
+	reset_display()
+	show()
+
+func prepare_combat() -> void:
 	for child in get_children():
 		if child is Actor:
 			actors.append(child)
-
-	if actors.size() == 1:
-		var dummy = actors[0]
-		dummy.grid_pos = Vector3i(dummy.transform.origin.floor())
-		dummy.action_points = 3
-
-		print(dummy.grid_pos)
-		print(get_actors_in_region(Region3i.from_coords(-1, 0, -1, 2, 0, 2)))
-
-		await get_tree().create_timer(1.0).timeout
-		#reset_display()
-
-		select_actor(dummy)
-		await get_tree().create_timer(0.5).timeout
-		show_available_moves()
-
-	await get_tree().create_timer(2.0).timeout
-	reset_display()
+			child.position = Vector3(child.grid_pos)
+			child.show()
 
 func get_actors_in_region(region: Region3i) -> Array[Actor]:
 	var result: Array[Actor] = []

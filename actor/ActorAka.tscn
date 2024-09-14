@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcggndy725g72"]
+
+[ext_resource type="Script" path="res://actor/Actor.gd" id="1_r6siu"]
+[ext_resource type="PackedScene" uid="uid://c77uagpmw2m3k" path="res://actor/pc/Aka.tscn" id="2_f422v"]
+
+[node name="ActorAka" type="Node3D"]
+script = ExtResource("1_r6siu")
+player = true
+actor_name = "Aka"
+starting_action_points = 10
+
+[node name="Aka" parent="." instance=ExtResource("2_f422v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)

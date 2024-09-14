@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://5lq2aed34d23"]
+
+[ext_resource type="Script" path="res://game/CombatCameraLead.gd" id="1_68yyg"]
+
+[node name="CombatCameraLead" type="Node3D"]
+script = ExtResource("1_68yyg")

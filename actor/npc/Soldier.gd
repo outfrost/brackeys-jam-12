@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const RAYCAST_VIS_SCN: PackedScene = preload("res://actor/RaycastVis.tscn")
+const RAYCAST_VIS_SCN: PackedScene = preload("res://actor/npc/RaycastVis.tscn")
 const DETECTION_RAY_CONE_ANGLE: float = TAU / 64.0
 const DETECTION_RAY_CONE_ANGLE_STEPS: int = 2
 const FOV_FORWARD_DIRECTION: = Vector3(0.0, -0.383, -0.924) # looking 22.5 deg down from straight ahead

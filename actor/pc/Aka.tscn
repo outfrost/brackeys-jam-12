@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://c77uagpmw2m3k"]
+
+[ext_resource type="Material" uid="uid://cxw3li7obmem8" path="res://material/dummy.tres" id="1_ooe7b"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ounu3"]
+top_radius = 0.25
+bottom_radius = 0.25
+height = 1.4
+radial_segments = 16
+
+[sub_resource type="SphereMesh" id="SphereMesh_yvmgh"]
+material = ExtResource("1_ooe7b")
+radius = 0.2
+height = 0.4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ci6fj"]
+top_radius = 0.02
+bottom_radius = 0.1
+height = 0.15
+
+[node name="Aka" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+mesh = SubResource("CylinderMesh_ounu3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+mesh = SubResource("SphereMesh_yvmgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.260467)
+mesh = SubResource("CylinderMesh_ci6fj")

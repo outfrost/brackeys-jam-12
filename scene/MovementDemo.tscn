@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scene/MovementDemo.gd" id="1_5g28t"]
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_xq7ab"]
-[ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/Beans.tscn" id="2_ogsrp"]
+[ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/pc/Beans.tscn" id="2_ogsrp"]
 [ext_resource type="PackedScene" uid="uid://cv3goobssds4b" path="res://game/OverheadCamera.tscn" id="3_84ohv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ylv17"]
