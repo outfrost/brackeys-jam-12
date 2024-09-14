@@ -35,21 +35,37 @@ func begin_combat(level: Node3D) -> void:
 	begin_turn()
 
 func begin_turn() -> void:
+	grid.reset_display()
 	player_ui.hide()
 	enemy_ui.hide()
 	if player_turn:
 		if ally_actors.size() == 0:
 			loss.emit()
 			return
+
+		for actor in ally_actors:
+			actor.action_points = actor.starting_action_points
+
 		var actor: = ally_actors[actor_idx]
 		name_label.text = actor.actor_name
 		ap_label.text = "AP %d/%d" % [actor.action_points, actor.starting_action_points]
 		player_ui.show()
+
+		grid.select_actor(actor)
+		grid.show_available_moves()
+
 		camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)
 	else:
 		if enemy_actors.size() == 0:
 			win.emit()
 			return
+
+		for actor in enemy_actors:
+			actor.action_points = actor.starting_action_points
+
 		var actor: = enemy_actors[actor_idx]
 		enemy_ui.show()
+
+		grid.select_actor(actor)
+
 		camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)

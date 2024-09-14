@@ -22,6 +22,7 @@ const TILE_SE: int = 13
 const TILE_SWE: int = 14
 const TILE_SW: int = 15
 const TILE_W: int = 16
+const TILE_RUNTIME_HIGHLIGHT: int = 17
 
 var astar: = AStarGrid2D.new()
 var actors: Array[Actor] = []
@@ -145,12 +146,14 @@ func show_available_moves() -> void:
 
 	var pos: = selected_actor.grid_pos
 	if get_cell_item(pos) == INVALID_CELL_ITEM:
+		push_error("selected actor is in an invalid grid position")
 		return
 
 	for cell in find_reachable_cells(pos, selected_actor.action_points):
 		set_cell_item(cell, TILE_RUNTIME_VISIBLE)
 
 func reset_display() -> void:
+	select_actor(null)
 	for cell in get_used_cells():
 		set_cell_item(cell, TILE_RUNTIME_HIDDEN)
 

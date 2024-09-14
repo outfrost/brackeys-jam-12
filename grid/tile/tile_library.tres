@@ -1,6 +1,8 @@
-[gd_resource type="MeshLibrary" load_steps=50 format=3 uid="uid://bvwwe060u3s16"]
+[gd_resource type="MeshLibrary" load_steps=55 format=3 uid="uid://bvwwe060u3s16"]
 
 [ext_resource type="Texture2D" uid="uid://dksd0vxshoji1" path="res://grid/tile/tile_nsw.png" id="1_clqqk"]
+[ext_resource type="Texture2D" uid="uid://vhpexk86ei6t" path="res://grid/tile/grid_selection.png" id="1_stlcw"]
+[ext_resource type="Shader" path="res://grid/tile/tile_visible.gdshader" id="1_xk3nq"]
 [ext_resource type="Texture2D" uid="uid://c68kkago5se0" path="res://grid/tile/tile_nw.png" id="2_ltrxx"]
 [ext_resource type="Texture2D" uid="uid://dqsm3cv1p8gyg" path="res://grid/tile/tile_s.png" id="3_vg6co"]
 [ext_resource type="Texture2D" uid="uid://cmhwm46pu4qu0" path="res://grid/tile/tile_se.png" id="4_v4gpm"]
@@ -8,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dqsqya3utrcmy" path="res://grid/tile/tile_sw.png" id="6_j054a"]
 [ext_resource type="Texture2D" uid="uid://bawkffgnt2dw3" path="res://grid/tile/tile_w.png" id="7_rlh05"]
 [ext_resource type="Texture2D" uid="uid://c1omkhy2hl40f" path="res://grid/tile/tile_base.png" id="8_7ap8m"]
+[ext_resource type="Texture2D" uid="uid://c1er2uk06qgso" path="res://grid/tile/grid_selection_highlight.png" id="9_vih3x"]
 [ext_resource type="Texture2D" uid="uid://d01t7ociqr27l" path="res://grid/tile/tile_e.png" id="9_yookh"]
 [ext_resource type="Texture2D" uid="uid://mgd50cuu3yf4" path="res://grid/tile/tile_ew.png" id="10_5xstb"]
 [ext_resource type="Texture2D" uid="uid://dg8pobbner2wx" path="res://grid/tile/tile_n.png" id="11_fsdth"]
@@ -24,18 +27,23 @@ albedo_color = Color(1, 0, 1, 1)
 material = SubResource("StandardMaterial3D_dmk51")
 size = Vector2(1, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egt4c"]
-blend_mode = 1
-no_depth_test = true
-shading_mode = 0
-specular_mode = 2
-disable_ambient_light = true
-disable_fog = true
-albedo_color = Color(0.406199, 0.432372, 1, 1)
-disable_receive_shadows = true
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4d26v"]
+render_priority = 0
+shader = ExtResource("1_xk3nq")
+shader_parameter/albedo = Color(0.45, 0.495833, 1, 0.752941)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/texture_albedo = ExtResource("1_stlcw")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_13j8g"]
-material = SubResource("StandardMaterial3D_egt4c")
+material = SubResource("ShaderMaterial_4d26v")
 size = Vector2(1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcdvf"]
@@ -148,6 +156,22 @@ disable_receive_shadows = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_q0jtf"]
 material = SubResource("StandardMaterial3D_kp8lh")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_005lh"]
+transparency = 1
+depth_draw_mode = 2
+no_depth_test = true
+shading_mode = 0
+specular_mode = 2
+disable_ambient_light = true
+disable_fog = true
+albedo_color = Color(0.6, 0.633333, 1, 1)
+albedo_texture = ExtResource("9_vih3x")
+disable_receive_shadows = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c2d30"]
+material = SubResource("StandardMaterial3D_005lh")
 size = Vector2(1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h3i4s"]
@@ -396,3 +420,9 @@ item/16/shapes = []
 item/16/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/16/navigation_layers = 1
 item/16/preview = ExtResource("7_rlh05")
+item/17/name = "Tile_RuntimeHighlight"
+item/17/mesh = SubResource("PlaneMesh_c2d30")
+item/17/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/17/shapes = []
+item/17/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/17/navigation_layers = 1
