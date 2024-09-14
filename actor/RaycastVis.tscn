@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://s1qgviufrxvb"]
+
+[ext_resource type="Script" path="res://actor/RaycastVis.gd" id="1_qkeum"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ap4ie"]
+radius = 0.025
+height = 0.05
+radial_segments = 12
+rings = 4
+
+[node name="RaycastVis" type="MeshInstance3D"]
+visible = false
+skeleton = NodePath("../..")
+script = ExtResource("1_qkeum")
+
+[node name="Ball" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_ap4ie")
+skeleton = NodePath("../../..")

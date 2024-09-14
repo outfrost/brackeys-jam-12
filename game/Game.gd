@@ -21,6 +21,7 @@ func _ready() -> void:
 			debug.startup()
 
 	main_menu.start_game.connect(on_start_game)
+	Harbinger.subscribe("stealth_target_detected", stealth_target_detected)
 
 func _process(delta: float) -> void:
 	Irid.text_overlay.display_public("fps %d" % Performance.get_monitor(Performance.TIME_FPS))
@@ -44,6 +45,7 @@ func on_start_game() -> void:
 	level.add_child(beans)
 	beans.global_transform = beans_spawn.global_transform
 	beans.camera_anchor = overhead_camera.anchor
+	Harbinger.dispatch_deferred("stealth_track_target", [beans])
 
 	overhead_camera.follow = beans
 
@@ -52,3 +54,6 @@ func back_to_menu() -> void:
 		child.queue_free()
 	overhead_camera = null
 	main_menu.show()
+
+func stealth_target_detected(_ignore) -> void:
+	back_to_menu()

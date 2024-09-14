@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://clxjw3jar4dfl"]
+
+[ext_resource type="Script" path="res://actor/Soldier.gd" id="1_rk24p"]
+[ext_resource type="Resource" uid="uid://b0igvg55rxr7q" path="res://actor/detection_normal.tres" id="2_vn72l"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tjhgm"]
+radius = 0.3
+height = 1.8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6omfy"]
+top_radius = 0.25
+bottom_radius = 0.25
+height = 1.4
+radial_segments = 16
+
+[sub_resource type="SphereMesh" id="SphereMesh_umhw5"]
+radius = 0.2
+height = 0.4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_eqqld"]
+top_radius = 0.02
+bottom_radius = 0.1
+height = 0.15
+
+[node name="Soldier" type="CharacterBody3D" node_paths=PackedStringArray("vision_sensor")]
+script = ExtResource("1_rk24p")
+vision_sensor = NodePath("VisionSensor")
+detection_profile = ExtResource("2_vn72l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_tjhgm")
+
+[node name="VisionSensor" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, -0.1)
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Visual"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+mesh = SubResource("CylinderMesh_6omfy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Visual/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+mesh = SubResource("SphereMesh_umhw5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Visual/MeshInstance3D/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.260467)
+mesh = SubResource("CylinderMesh_eqqld")

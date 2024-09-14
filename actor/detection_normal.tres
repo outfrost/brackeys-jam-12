@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DetectionProfile" load_steps=2 format=3 uid="uid://b0igvg55rxr7q"]
+
+[ext_resource type="Script" path="res://actor/DetectionProfile.gd" id="1_shq6p"]
+
+[resource]
+script = ExtResource("1_shq6p")
+fov = 1.5708
+los_range = 8.0
+los_sensitivity = 0.25
+motion_range = 15.0
+motion_sensitivity = 0.75
+decay = 0.2
