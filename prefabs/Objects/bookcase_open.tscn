@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://vncfnxptl2lu"]
+
+[ext_resource type="PackedScene" uid="uid://cht4vpghsy0vs" path="res://asset/Kenney_furnature-kit/Models/GLTF format/bookcaseOpen.glb" id="1_h5w6f"]
+
+[node name="bookcaseOpen" instance=ExtResource("1_h5w6f")]
+
+[node name="bookcaseOpen(Clone)" parent="." index="0"]
+transform = Transform3D(2.5, 0, 0, 0, 2.3, 0, 0, 0, 2.3, 0, 0, 0)

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbxgng57vsss6"]
+
+[ext_resource type="PackedScene" uid="uid://bye8bu8tbqr1k" path="res://asset/Kenney_car-kit/Models/GLB format/van.glb" id="1_nx2ve"]
+
+[node name="van" instance=ExtResource("1_nx2ve")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)

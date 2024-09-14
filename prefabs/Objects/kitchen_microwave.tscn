@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqhr2pivsm3p3"]
+
+[ext_resource type="PackedScene" uid="uid://dv0jxmlcd06eg" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenMicrowave.glb" id="1_u4gn2"]
+
+[node name="kitchenMicrowave" instance=ExtResource("1_u4gn2")]
+
+[node name="kitchenMicrowave(Clone)" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

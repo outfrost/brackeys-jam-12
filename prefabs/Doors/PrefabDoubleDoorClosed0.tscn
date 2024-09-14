@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://be1k3bjmwyy7r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bmo4o"]
+size = Vector3(0.8, 2, 0.05)
+
+[node name="PrefabDoubleDoor0" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.25, 0)
+size = Vector3(2.15, 2.5, 0.15)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+operation = 2
+size = Vector3(1.5, 2, 0.15)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1, 0)
+mesh = SubResource("BoxMesh_bmo4o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1, 0)
+mesh = SubResource("BoxMesh_bmo4o")

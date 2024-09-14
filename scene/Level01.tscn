@@ -1,10 +1,12 @@
-[gd_scene load_steps=36 format=3 uid="uid://bllbs1ovh7iwt"]
+[gd_scene load_steps=52 format=3 uid="uid://bllbs1ovh7iwt"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_8g5we"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="1_qtkdu"]
 [ext_resource type="PackedScene" uid="uid://bp040d46ib7jf" path="res://grid/CombatGrid.tscn" id="2_3t0jk"]
+[ext_resource type="PackedScene" uid="uid://nmvujpwi1un1" path="res://prefabs/Objects/desk.tscn" id="2_bfpfo"]
 [ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="2_o8xh5"]
 [ext_resource type="PackedScene" uid="uid://cajap0afge4hp" path="res://prefabs/Doors/PrefabDoubleDoor0.tscn" id="3_m6w17"]
+[ext_resource type="PackedScene" uid="uid://drrfd2ng3oafv" path="res://prefabs/Objects/chair_desk.tscn" id="3_o5spr"]
 [ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/Windows/PrefabWindow0.tscn" id="4_jcae0"]
 [ext_resource type="PackedScene" uid="uid://db2renv32d142" path="res://prefabs/Windows/PrefabDoubleWindow0.tscn" id="5_l6ohu"]
 [ext_resource type="PackedScene" uid="uid://dvj7m5dd703k" path="res://prefabs/Objects/PrefabDesk0.tscn" id="6_5tcfn"]
@@ -13,12 +15,14 @@
 [ext_resource type="PackedScene" uid="uid://yub8b7yfwru7" path="res://prefabs/Walls/PrefabWallOpenMiddle0.tscn" id="9_db7j1"]
 [ext_resource type="PackedScene" uid="uid://cn3rm580d00ht" path="res://prefabs/WallTunnels/PrefabWallTunnelLower.tscn" id="10_wuloe"]
 [ext_resource type="PackedScene" uid="uid://bsnvldwrqfoxv" path="res://prefabs/WallTunnels/PrefabWallTunnelT.tscn" id="11_abb1w"]
+[ext_resource type="PackedScene" uid="uid://bu7mydapngljm" path="res://prefabs/Doors/PrefabDoorClosed0.tscn" id="13_bldu6"]
 [ext_resource type="PackedScene" uid="uid://bbk77k7g5pr3w" path="res://prefabs/Objects/kitchen_cabinet.tscn" id="14_55csy"]
-[ext_resource type="PackedScene" uid="uid://bt46s4qm0yr4x" path="res://asset/Kenney_car-kit/Models/GLB format/suv-luxury.glb" id="14_woh7q"]
-[ext_resource type="PackedScene" uid="uid://bsmvmy8ndewgf" path="res://asset/Kenney_car-kit/Models/GLB format/truck-flat.glb" id="15_0dlew"]
 [ext_resource type="PackedScene" uid="uid://bfolp6w6x48xh" path="res://prefabs/Objects/PrefabFridge0.tscn" id="15_lqbd6"]
-[ext_resource type="PackedScene" uid="uid://bye8bu8tbqr1k" path="res://asset/Kenney_car-kit/Models/GLB format/van.glb" id="16_27lem"]
-[ext_resource type="PackedScene" uid="uid://dbbhhlpjiw3lm" path="res://asset/Kenney_car-kit/Models/GLB format/garbage-truck.glb" id="17_ailst"]
+[ext_resource type="PackedScene" uid="uid://ch62v3j43757h" path="res://prefabs/Vehicles/PrefabGarbage_truck.tscn" id="16_q68dx"]
+[ext_resource type="PackedScene" uid="uid://cbxgng57vsss6" path="res://prefabs/Vehicles/PrefabVan.tscn" id="17_4pqd7"]
+[ext_resource type="PackedScene" uid="uid://lxcep3sobsnq" path="res://prefabs/Vehicles/PrefabSuv_luxury.tscn" id="18_en44t"]
+[ext_resource type="PackedScene" uid="uid://dsrtmnqwtb1fi" path="res://prefabs/Vehicles/PrefabTruck_flat.tscn" id="19_w4bmk"]
+[ext_resource type="PackedScene" uid="uid://vncfnxptl2lu" path="res://prefabs/Objects/bookcase_open.tscn" id="20_v6xoh"]
 [ext_resource type="PackedScene" uid="uid://danld87rte7h7" path="res://asset/Kenney_furnature-kit/Models/GLTF format/televisionModern.glb" id="20_yh0yl"]
 [ext_resource type="PackedScene" uid="uid://crblb0gqgsv4y" path="res://asset/Kenney_furnature-kit/Models/GLTF format/cabinetTelevisionDoors.glb" id="21_37wvt"]
 [ext_resource type="PackedScene" uid="uid://dkghc2o8dao85" path="res://asset/Kenney_furnature-kit/Models/GLTF format/loungeChair.glb" id="23_ytkgr"]
@@ -30,6 +34,18 @@
 [ext_resource type="PackedScene" uid="uid://82n6mt5vqgdo" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeGlassSquare.glb" id="30_l4evk"]
 [ext_resource type="PackedScene" uid="uid://i37gbv26tr62" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableGlass.glb" id="30_u12p8"]
 [ext_resource type="PackedScene" uid="uid://brifn02a3xw6w" path="res://prefabs/Objects/kitchen_coffee_machine.tscn" id="31_4yr0o"]
+[ext_resource type="PackedScene" uid="uid://y8dov35qjldk" path="res://prefabs/Objects/kitchen_sink.tscn" id="31_jnn82"]
+[ext_resource type="PackedScene" uid="uid://bqhr2pivsm3p3" path="res://prefabs/Objects/kitchen_microwave.tscn" id="32_5k5xw"]
+[ext_resource type="PackedScene" uid="uid://ciajal8ak70ba" path="res://prefabs/Objects/kitchen_cabinet_drawer.tscn" id="33_wby52"]
+[ext_resource type="PackedScene" uid="uid://bd1u0rrr6sy56" path="res://prefabs/Objects/kitchen_stove_electric.tscn" id="34_qo8ps"]
+[ext_resource type="PackedScene" uid="uid://1yd2tlyvx81o" path="res://prefabs/Objects/kitchen_cabinet_corner_inner.tscn" id="35_8y3pv"]
+[ext_resource type="PackedScene" uid="uid://b2ciqjstsw3rl" path="res://prefabs/Objects/kitchen_blender.tscn" id="36_50hmr"]
+[ext_resource type="PackedScene" uid="uid://rhg8u16jmrmy" path="res://prefabs/Objects/kitchen_bar_end.tscn" id="37_f5ekl"]
+[ext_resource type="PackedScene" uid="uid://5mssbnqbgchl" path="res://prefabs/Objects/kitchen_bar.tscn" id="38_x4gec"]
+[ext_resource type="PackedScene" uid="uid://clk2q5458y3a1" path="res://prefabs/Objects/laptop.tscn" id="41_vorx4"]
+[ext_resource type="PackedScene" uid="uid://o7e4jrvpdb2o" path="res://prefabs/Objects/StorageRack4X.tscn" id="43_mgiyc"]
+[ext_resource type="PackedScene" uid="uid://4o2njcycgvt8" path="res://prefabs/Objects/StorageRack3X.tscn" id="44_58r8f"]
+[ext_resource type="PackedScene" uid="uid://be1k3bjmwyy7r" path="res://prefabs/Doors/PrefabDoubleDoorClosed0.tscn" id="46_1wydq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oackt"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -217,6 +233,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 6)
 
 [node name="PrefabWall333" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 2)
+
+[node name="PrefabWall510" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6)
+
+[node name="PrefabWall511" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
+
+[node name="PrefabWall512" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 6)
+
+[node name="PrefabWall513" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 2)
+
+[node name="PrefabWall514" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6)
+
+[node name="PrefabWall515" parent="Buildings" instance=ExtResource("1_qtkdu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
 
 [node name="PrefabWall13" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 2)
@@ -498,13 +532,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -38)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0, -35)
 
 [node name="PrefabWall231" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -42)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13, 0, -42)
 
 [node name="PrefabWall232" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -43)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13, 0, -43)
 
 [node name="PrefabWall233" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -44)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13, 0, -44)
 
 [node name="PrefabWall234" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -46)
@@ -516,7 +550,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0,
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -48)
 
 [node name="PrefabWall237" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -45)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13, 0, -45)
 
 [node name="PrefabWall238" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18, 0, -49)
@@ -1536,19 +1570,19 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -48)
 
 [node name="PrefabWall213" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -46)
 
 [node name="PrefabWall214" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -46)
 
 [node name="PrefabWall216" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -46)
 
 [node name="PrefabWall219" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -46)
 
 [node name="PrefabWall215" parent="Buildings" instance=ExtResource("1_qtkdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -46)
 
 [node name="PrefabWall217" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 0, -42)
@@ -1584,9 +1618,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -42)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -42)
 
 [node name="PrefabDoor0" parent="Buildings" instance=ExtResource("2_o8xh5")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -2)
-
-[node name="PrefabDoor2" parent="Buildings" instance=ExtResource("2_o8xh5")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -6)
 
 [node name="PrefabWall74" parent="Buildings" instance=ExtResource("1_qtkdu")]
@@ -1615,9 +1646,6 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 
 
 [node name="PrefabWall98" parent="Buildings" instance=ExtResource("1_qtkdu")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -18)
-
-[node name="PrefabDoor4" parent="Buildings" instance=ExtResource("2_o8xh5")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -17)
 
 [node name="PrefabDoubleDoor0" parent="Buildings" instance=ExtResource("3_m6w17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
@@ -1662,7 +1690,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 0,
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24, 0, -61)
 
 [node name="Ledge" type="MeshInstance3D" parent="Buildings"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1.9, -61.6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 1.75, -61.6)
 mesh = SubResource("BoxMesh_05odx")
 skeleton = NodePath("../..")
 
@@ -1693,20 +1721,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -40.5)
 [node name="PrefabWallTunnelLower3" parent="Buildings" instance=ExtResource("10_wuloe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -39.5)
 
-[node name="PrefabDoor5" parent="Buildings" instance=ExtResource("2_o8xh5")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, -51)
-
 [node name="PrefabDoor6" parent="Buildings" instance=ExtResource("2_o8xh5")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, -57)
 
-[node name="PrefabDoor7" parent="Buildings" instance=ExtResource("2_o8xh5")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -54)
-
-[node name="PrefabDoubleDoor3" parent="Buildings" instance=ExtResource("3_m6w17")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 35, 0, -61)
-
 [node name="PrefabWindow1" parent="Buildings" instance=ExtResource("4_jcae0")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 0, -1)
+
+[node name="PrefabDoor2" parent="Buildings" instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -2)
 
 [node name="Furniture" type="Node3D" parent="."]
 
@@ -1728,19 +1750,79 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12.95)
 [node name="kitchenFridge" parent="Furniture" instance=ExtResource("15_lqbd6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.95, 0, -12.95)
 
+[node name="kitchenCoffeeMachine" parent="Furniture" instance=ExtResource("31_4yr0o")]
+transform = Transform3D(0.92388, 0, 0.382684, 0, 1, 0, -0.382684, 0, 0.92388, -6.75, 0.92, -13.15)
+
+[node name="desk" parent="Furniture" instance=ExtResource("2_bfpfo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.5, 0, -44.2)
+
+[node name="chairDesk" parent="Furniture" instance=ExtResource("3_o5spr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.38617, 0, -45.6526)
+
+[node name="laptop" parent="Furniture" instance=ExtResource("41_vorx4")]
+transform = Transform3D(-0.382683, 0, 0.92388, 0, 1, 0, -0.92388, 0, -0.382683, 9.35, 0.85, -44.5)
+
+[node name="desk4" parent="Furniture" instance=ExtResource("2_bfpfo")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 13.4741, 0, -49.8684)
+
+[node name="chairDesk4" parent="Furniture" instance=ExtResource("3_o5spr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.5879, 0, -48.4158)
+
+[node name="laptop4" parent="Furniture" instance=ExtResource("41_vorx4")]
+transform = Transform3D(1.19209e-07, 0, -1, 0, 1, 0, 1, 0, 1.19209e-07, 13.6741, 0.85, -49.0684)
+
+[node name="desk2" parent="Furniture" instance=ExtResource("2_bfpfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3279, 0, -48.1962)
+
+[node name="chairDesk2" parent="Furniture" instance=ExtResource("3_o5spr")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15.7804, 0, -47.9101)
+
+[node name="laptop2" parent="Furniture" instance=ExtResource("41_vorx4")]
+transform = Transform3D(0.382683, 0, 0.92388, 0, 1, 0, -0.92388, 0, 0.382683, 14.7279, 0.85, -48.3462)
+
+[node name="desk3" parent="Furniture" instance=ExtResource("2_bfpfo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.8962, 0, -49.8721)
+
+[node name="chairDesk3" parent="Furniture" instance=ExtResource("3_o5spr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.4437, 0, -49.8583)
+
+[node name="laptop3" parent="Furniture" instance=ExtResource("41_vorx4")]
+transform = Transform3D(-0.923879, 0, -0.382684, 0, 1, 0, 0.382684, 0, -0.923879, 15.2962, 0.85, -49.7221)
+
+[node name="bookcaseOpen" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -51.913)
+
+[node name="bookcaseOpen2" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -51.1)
+
+[node name="bookcaseOpen3" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -50.3)
+
+[node name="bookcaseOpen4" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -49.5)
+
+[node name="bookcaseOpen5" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -48.7)
+
+[node name="bookcaseOpen6" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -47.9)
+
+[node name="bookcaseOpen7" parent="Furniture" instance=ExtResource("20_v6xoh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -47.1)
+
 [node name="Vehicles" type="Node3D" parent="."]
 
-[node name="van" parent="Vehicles" instance=ExtResource("16_27lem")]
+[node name="garbage-truck" parent="Vehicles" instance=ExtResource("16_q68dx")]
+transform = Transform3D(0.535757, 0, 1.29343, 0, 1.4, 0, -1.29343, 0, 0.535757, -8, 0, 4)
+
+[node name="van" parent="Vehicles" instance=ExtResource("17_4pqd7")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -1, 0, -44.85)
 
-[node name="suv-luxury" parent="Vehicles" instance=ExtResource("14_woh7q")]
+[node name="suv-luxury" parent="Vehicles" instance=ExtResource("18_en44t")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -7, 0, -45)
 
-[node name="truck-flat" parent="Vehicles" instance=ExtResource("15_0dlew")]
+[node name="truck-flat" parent="Vehicles" instance=ExtResource("19_w4bmk")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -4.1, 0, -44.7)
-
-[node name="garbage-truck" parent="Vehicles" instance=ExtResource("17_ailst")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4)
 
 [node name="televisionModern" parent="." instance=ExtResource("20_yh0yl")]
 transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 8.003, 0.675, -23.677)
@@ -1772,5 +1854,56 @@ transform = Transform3D(-2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, 6, 0, 
 [node name="tableGlass" parent="." instance=ExtResource("30_u12p8")]
 transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08, 10.05, 0, -19.9438)
 
-[node name="kitchenCoffeeMachine" parent="." instance=ExtResource("31_4yr0o")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -7.55, 1, -13.2)
+[node name="kitchenSink" parent="." instance=ExtResource("31_jnn82")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -12.95)
+
+[node name="kitchenMicrowave" parent="." instance=ExtResource("32_5k5xw")]
+transform = Transform3D(0.92388, 0, 0.382683, 0, 1, 0, -0.382683, 0, 0.92388, -7.75, 0.92, -13.15)
+
+[node name="kitchenCabinetDrawer" parent="." instance=ExtResource("33_wby52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -12.95)
+
+[node name="kitchenStoveElectric" parent="." instance=ExtResource("34_qo8ps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -12.95)
+
+[node name="kitchenCabinetCornerInner" parent="." instance=ExtResource("35_8y3pv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12.928)
+
+[node name="kitchenBlender" parent="." instance=ExtResource("36_50hmr")]
+transform = Transform3D(0.866026, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866026, -3.75, 0.9, -13.55)
+
+[node name="kitchenBarEnd" parent="." instance=ExtResource("37_f5ekl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.715)
+
+[node name="kitchenBar" parent="." instance=ExtResource("38_x4gec")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -11.95)
+
+[node name="kitchenBar2" parent="." instance=ExtResource("38_x4gec")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -10.95)
+
+[node name="StorageRackX4" parent="." instance=ExtResource("43_mgiyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.05, 0, -51.35)
+
+[node name="StorageRackX5" parent="." instance=ExtResource("44_58r8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.05, 0, -51.35)
+
+[node name="StorageRackX6" parent="." instance=ExtResource("44_58r8f")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.65, 0, -46.5)
+
+[node name="StorageRackX7" parent="." instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -64.9)
+
+[node name="StorageRackX8" parent="." instance=ExtResource("43_mgiyc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.35, 0, -60.9)
+
+[node name="PrefabDoor0" parent="." instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, -17)
+
+[node name="PrefabDoor1" parent="." instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, -50)
+
+[node name="PrefabDoor2" parent="." instance=ExtResource("13_bldu6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, -54)
+
+[node name="PrefabDoubleDoor0" parent="." instance=ExtResource("46_1wydq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 35, 0, -59)
