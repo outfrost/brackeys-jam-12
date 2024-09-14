@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ch62v3j43757h"]
+[gd_scene load_steps=6 format=3 uid="uid://ch62v3j43757h"]
 
 [ext_resource type="PackedScene" uid="uid://dbbhhlpjiw3lm" path="res://asset/Kenney_car-kit/Models/GLB format/garbage-truck.glb" id="1_72ok6"]
 [ext_resource type="Texture2D" uid="uid://dsyeepqh5vvhu" path="res://asset/Kenney_car-kit/Models/GLB format/Textures/colormap.png" id="2_4xusr"]
@@ -12,6 +12,9 @@ emission_enabled = true
 emission_energy_multiplier = 3.0
 emission_texture = ExtResource("3_wdtv1")
 texture_filter = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nqtdc"]
+size = Vector3(1.65, 1.65, 3.35)
 
 [node name="garbage-truck" instance=ExtResource("1_72ok6")]
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
@@ -29,3 +32,9 @@ distance_fade_shadow = 40.0
 distance_fade_length = 20.0
 spot_angle = 37.0
 spot_angle_attenuation = 1.5
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025, 0.825, -0.025)
+shape = SubResource("BoxShape3D_nqtdc")

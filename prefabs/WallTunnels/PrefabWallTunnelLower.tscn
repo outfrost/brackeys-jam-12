@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn3rm580d00ht"]
+[gd_scene load_steps=4 format=3 uid="uid://cn3rm580d00ht"]
 
 [ext_resource type="Material" uid="uid://cdetcfbphcj5x" path="res://material/vent.tres" id="1_fc3xm"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_xf8cl"]
 material = ExtResource("1_fc3xm")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1v1ku"]
+size = Vector3(0.4, 0.1, 1.1)
 
 [node name="PrefabWallTunnelLower" type="Node3D"]
 
@@ -22,3 +25,21 @@ mesh = SubResource("QuadMesh_xf8cl")
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.19729e-15, -0.3, -4.37114e-08, -5.02681e-08, -1.31134e-08, 1, -1.15, 0, -4.37114e-08, 0.5, 0.125, 0)
 mesh = SubResource("QuadMesh_xf8cl")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.0800427, 0)
+shape = SubResource("BoxShape3D_1v1ku")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0.5, 0.430043, 0)
+shape = SubResource("BoxShape3D_1v1ku")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0.325, 0.255043, 0)
+shape = SubResource("BoxShape3D_1v1ku")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.675, 0.255043, -5.96046e-08)
+shape = SubResource("BoxShape3D_1v1ku")
