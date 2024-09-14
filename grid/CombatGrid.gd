@@ -162,6 +162,9 @@ func find_reachable_cells(start_pos: Vector3i, max_dist: int) -> Array[Vector3i]
 	var start: = grid_to_astar(start_pos)
 
 	var append_if_reachable: = func(end_pos: Vector3i):
+		for actor in actors:
+			if actor.grid_pos == end_pos:
+				return
 		var end: = grid_to_astar(end_pos)
 		if astar.is_in_boundsv(end) && !astar.is_point_solid(end):
 			var path: = astar.get_id_path(start, end)
