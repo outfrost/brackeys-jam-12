@@ -1,9 +1,10 @@
-[gd_scene load_steps=37 format=3 uid="uid://b57knuh2klkpb"]
+[gd_scene load_steps=38 format=3 uid="uid://b57knuh2klkpb"]
 
 [ext_resource type="PackedScene" uid="uid://c5cbqpm6lggvv" path="res://scene/terrain/Terrain.tscn" id="1_mit4x"]
 [ext_resource type="PackedScene" uid="uid://bp040d46ib7jf" path="res://grid/CombatGrid.tscn" id="2_j3628"]
 [ext_resource type="PackedScene" uid="uid://clxjw3jar4dfl" path="res://actor/Soldier.tscn" id="3_02bae"]
 [ext_resource type="PackedScene" uid="uid://saqprhc5hatq" path="res://prefabs/Walls/PrefabWall0.tscn" id="4_28ahd"]
+[ext_resource type="PackedScene" uid="uid://uqkmoi2iexr2" path="res://scene/objective/StealthObjective.tscn" id="4_kiydr"]
 [ext_resource type="PackedScene" uid="uid://dqc68n6rq25v4" path="res://prefabs/Doors/PrefabDoor0.tscn" id="5_u4f3k"]
 [ext_resource type="PackedScene" uid="uid://cajap0afge4hp" path="res://prefabs/Doors/PrefabDoubleDoor0.tscn" id="6_k1uh4"]
 [ext_resource type="PackedScene" uid="uid://b4ppioknvgdir" path="res://prefabs/Windows/PrefabWindow0.tscn" id="7_auj4h"]
@@ -80,10 +81,13 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="BeansSpawn" type="Marker3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, -12)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, -11.5)
 
 [node name="Soldier" parent="." instance=ExtResource("3_02bae")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 3, 0, -15)
+
+[node name="StealthObjective" parent="." instance=ExtResource("4_kiydr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 
 [node name="Buildings" type="Node3D" parent="."]
 
@@ -1778,3 +1782,6 @@ transform = Transform3D(-4.95032e-08, 0, -1, 0, 2.02, 0, 1.1325, 0, -4.37114e-08
 
 [node name="kitchenCoffeeMachine" parent="." instance=ExtResource("31_ccqs7")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -7.55, 1, -13.2)
+
+[node name="StealthEndCameraPos" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 28, -18)

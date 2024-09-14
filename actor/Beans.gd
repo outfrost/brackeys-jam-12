@@ -13,7 +13,7 @@ var camera_anchor: Node3D
 @onready var debug: = Irid.text_overlay.tracker(self)
 
 func _ready() -> void:
-	pass
+	Harbinger.subscribe("stealth_objective_reached", stealth_objective_reached)
 	#debug.trace(^"prev_transform")
 	#debug.trace(^"transform")
 
@@ -68,3 +68,6 @@ func _physics_process(delta: float) -> void:
 	velocity.z = move_toward(velocity.z, direction.z * SPEED, ACCEL * delta)
 
 	move_and_slide()
+
+func stealth_objective_reached(_ignore) -> void:
+	enabled = false
