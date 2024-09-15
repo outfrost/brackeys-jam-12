@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcr77tepvf6fy"]
+
+[ext_resource type="Script" path="res://actor/Actor.gd" id="1_e7odi"]
+[ext_resource type="PackedScene" uid="uid://clf20ii4x1sgl" path="res://actor/pc/Beans.tscn" id="2_s8dqg"]
+
+[node name="ActorBeans" type="Node3D"]
+script = ExtResource("1_e7odi")
+player = true
+actor_name = "Beans"
+starting_action_points = 8
+
+[node name="Beans" parent="." instance=ExtResource("2_s8dqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.1, 0.5)

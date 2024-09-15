@@ -8,9 +8,8 @@ script = ExtResource("1_lkx8l")
 
 [node name="PlayerUI" type="Control" parent="."]
 layout_mode = 3
-anchor_left = 0.5
 anchor_top = 0.85
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.85
 grow_horizontal = 2
 grow_vertical = 0
@@ -70,7 +69,24 @@ text = "AP 0/9"
 horizontal_alignment = 2
 vertical_alignment = 1
 
+[node name="EndTurnButton" type="Button" parent="PlayerUI"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.9
+anchor_top = 1.0
+anchor_right = 0.95
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "End Turn"
+
 [node name="EnemyUI" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchor_left = 0.5
 anchor_top = 0.85

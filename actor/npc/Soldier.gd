@@ -27,7 +27,9 @@ var los_distance: float = 0.0
 var detected: float = 0.0
 var target_last_pos: = Vector3.ZERO
 
-@onready var debug: = Irid.text_overlay.tracker(self)
+var enabled: bool = true
+
+@onready var debug: = Irid.text_overlay.tracker(self).trace("detected")
 
 func _ready() -> void:
 	Harbinger.subscribe("stealth_track_target", set_target)
@@ -38,14 +40,15 @@ func _ready() -> void:
 		vision_sensor.add_child(vis)
 		raycast_vis.append(vis)
 
-	debug.trace("line_of_sight").trace("los_distance").trace("detected").trace("target_last_pos")
-
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("debug_draw_raycast"):
 		for vis in raycast_vis:
 			vis.visible = !vis.visible
 
 func _physics_process(delta: float) -> void:
+	if !enabled:
+		return
+
 	if !target:
 		detected = 0.0
 		return
@@ -71,8 +74,6 @@ func _physics_process(delta: float) -> void:
 	#query.exclude = [get_rid()]
 	var result: = space_state.intersect_ray(query)
 	var fov_forward: = global_transform.basis * FOV_FORWARD_DIRECTION
-	debug.display(rad_to_deg(fov_forward.angle_to(dir)))
-	debug.display(rad_to_deg(detection_profile.fov))
 	if result && fov_forward.angle_to(dir) < detection_profile.fov * 0.5:
 		if result.collider == target:
 			raycast_vis[ray_idx].update_vis(result.position, Color.GREEN)
@@ -112,6 +113,8 @@ func _physics_process(delta: float) -> void:
 
 func set_target(t) -> void:
 	target = t[0]
+	if !target:
+		reset(null)
 
 func reset(_ignore) -> void:
 	detected = 0.0

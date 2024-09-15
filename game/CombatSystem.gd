@@ -7,6 +7,7 @@ signal loss
 @onready var enemy_ui: Control = $EnemyUI
 @onready var name_label: Label = %NameLabel
 @onready var ap_label: Label = %APLabel
+@onready var end_turn_button: Button = %EndTurnButton
 
 var grid: CombatGrid
 var camera_lead: Node3D
@@ -19,6 +20,7 @@ var actor_idx: int = 0
 func _ready() -> void:
 	player_ui.hide()
 	enemy_ui.hide()
+	end_turn_button.pressed.connect(player_turn_finished)
 
 func begin_combat(level: Node3D) -> void:
 	grid = level.get_node(^"CombatGrid")
@@ -91,3 +93,42 @@ func actor_move_ordered(pos: Vector3i) -> void:
 	actor.begin_move(path)
 	actor.grid_pos = pos
 	grid.show_available_moves()
+
+	await actor.done_moving
+	if player_turn:
+		check_combat_state()
+
+func check_combat_state() -> void:
+	if ally_actors.size() == 0:
+		loss.emit()
+		return
+	if enemy_actors.size() == 0:
+		win.emit()
+		return
+
+	if player_turn:
+		var points_left: = false
+		for actor in ally_actors:
+			if actor.action_points > 0:
+				points_left = true
+				break
+		if !points_left:
+			player_turn_finished()
+	else:
+		var points_left: = false
+		for actor in enemy_actors:
+			if actor.action_points > 0:
+				points_left = true
+				break
+		if !points_left:
+			enemy_turn_finished()
+
+func player_turn_finished() -> void:
+	player_turn = false
+	actor_idx = 0
+	begin_turn()
+
+func enemy_turn_finished() -> void:
+	player_turn = true
+	actor_idx = 0
+	begin_turn()

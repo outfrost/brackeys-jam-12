@@ -1,17 +1,25 @@
 class_name Actor
 extends Node3D
 
+signal done_moving
+
 const VISUAL_MOVE_SPEED: float = 3.0
 
 @export var player: bool = false
 @export var actor_name: String
-@export var grid_pos: Vector3i
 @export var starting_action_points: int
 
+var grid_pos: Vector3i
 var action_points: int
 var moving: bool = false
 var move_path: CombatGrid.GridPath = null
 var move_path_idx: int = 0
+
+func _ready() -> void:
+	grid_pos = Vector3i(position)
+
+	if get_child(0).get("enabled"):
+		get_child(0).enabled = false
 
 func _process(delta: float) -> void:
 	if moving:
@@ -22,6 +30,7 @@ func _process(delta: float) -> void:
 			if move_path_idx >= move_path.steps.size():
 				moving = false
 				move_path = null
+				done_moving.emit()
 
 func begin_move(path: CombatGrid.GridPath) -> void:
 	if moving:
