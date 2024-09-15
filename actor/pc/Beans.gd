@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 const SPEED: float = 2.0
 const ACCEL: float = 8.0
-const JUMP_VELOCITY: float = 3.0
+const JUMP_VELOCITY: float = 3.5
 
 @onready var visual: Node3D = $Visual
 @onready var prev_transform: Transform3D = transform
