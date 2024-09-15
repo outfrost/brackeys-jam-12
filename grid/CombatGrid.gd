@@ -151,7 +151,6 @@ func prepare_combat() -> void:
 	for child in get_children():
 		if child is Actor:
 			actors.append(child)
-			child.position = Vector3(child.grid_pos)
 			child.show()
 
 func get_actors_in_region(region: Region3i) -> Array[Actor]:

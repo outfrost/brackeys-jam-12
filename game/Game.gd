@@ -80,6 +80,7 @@ func stealth_objective_reached(_ignore) -> void:
 	overhead_camera.target_rotation = TAU / 8.0
 	overhead_camera.target_zoom_dist = 4.0
 	overhead_camera.controls_enabled = false
+	Harbinger.dispatch_deferred("stealth_track_target", [null])
 
 	await get_tree().create_timer(5.0).timeout
 
