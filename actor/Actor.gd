@@ -32,22 +32,16 @@ var selection_area: SelectionArea
 func _ready() -> void:
 	grid_pos = Vector3i(position)
 
-	for node in find_children("*", "CollisionShape3D", true, false):
-		node.disabled = true
+	if get_child_count() == 0:
+		return
+
+	(get_child(0) as Node3D).rotation.y = starting_rotation
 
 	selection_area = SEL_AREA_SCN.instantiate()
 	add_child(selection_area)
 	selection_area.enable(false)
 	selection_area.position = Vector3(0.5, 0.0, 0.5)
 	selection_area.selected.connect(func(): selected.emit())
-
-	if get_child_count() < 1:
-		return
-
-	(get_child(0) as Node3D).rotation.y = starting_rotation
-
-	if get_child(0).get("enabled"):
-		get_child(0).enabled = false
 
 func _process(delta: float) -> void:
 	if moving:
@@ -61,6 +55,14 @@ func _process(delta: float) -> void:
 				done_moving.emit()
 		else:
 			(get_child(0) as Node3D).rotation.y = Vector3.FORWARD.signed_angle_to(dest - position, Vector3.UP)
+
+func activate_combat() -> void:
+	for node in find_children("*", "CollisionShape3D", true, false):
+		node.disabled = true
+
+	for child in get_children():
+		if child.get("enabled"):
+			child.enabled = false
 
 func begin_move(path: CombatGrid.GridPath) -> void:
 	if moving:

@@ -48,6 +48,7 @@ func begin_combat(level: Node3D) -> void:
 			enemy_actors.append(actor)
 		actor.selected.connect(func(): actor_selected(actor))
 		actor.died.connect(func(): actor_died(actor))
+		actor.activate_combat()
 
 	enemy_actors.shuffle()
 	active = true

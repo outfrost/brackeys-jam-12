@@ -7,7 +7,7 @@ fi
 
 if [ -n "${1}" ]; then
 	echo "Setting version text to '${1}'" >&2
-	echo "${1}" > version.txt
+	echo "${1}" > version.tres
 fi
 
 echo "Importing project resources" >&2
