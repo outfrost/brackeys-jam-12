@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://t44yv442xrel"]
+[gd_scene load_steps=3 format=3 uid="uid://t44yv442xrel"]
 
 [ext_resource type="PackedScene" uid="uid://crblb0gqgsv4y" path="res://asset/Kenney_furnature-kit/Models/GLTF format/cabinetTelevisionDoors.glb" id="1_f4k1m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jyy6i"]
+size = Vector3(1.75964, 0.684106, 0.55)
 
 [node name="cabinetTelevisionDoors" instance=ExtResource("1_f4k1m")]
 
 [node name="cabinetTelevisionDoors(Clone)" parent="." index="0"]
 transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.879822, 0.342053, -0.275)
+shape = SubResource("BoxShape3D_jyy6i")

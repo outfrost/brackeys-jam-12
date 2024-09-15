@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://y8dov35qjldk"]
+[gd_scene load_steps=3 format=3 uid="uid://y8dov35qjldk"]
 
 [ext_resource type="PackedScene" uid="uid://v5h6lr3ojt58" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenSink.glb" id="1_ne1wx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oogdw"]
+size = Vector3(1, 0.926636, 0.958984)
 
 [node name="kitchenSink" instance=ExtResource("1_ne1wx")]
 
 [node name="kitchenSink(Clone)" parent="." index="0"]
 transform = Transform3D(2.33, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.463318, -0.520508)
+shape = SubResource("BoxShape3D_oogdw")

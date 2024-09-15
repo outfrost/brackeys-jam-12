@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://brifn02a3xw6w"]
+[gd_scene load_steps=3 format=3 uid="uid://brifn02a3xw6w"]
 
 [ext_resource type="PackedScene" uid="uid://nfccxnfmygsw" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenCoffeeMachine.glb" id="1_57qc1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kqofp"]
+points = PackedVector3Array(0.0948, 0, -0.457111, 0.0948, 0.116994, -0.480486, 0.2844, 0, -0.457111, 0, 0, -0.164238, 0.2844, 0.116994, -0.480486, 0.0948, 0.354978, -0.480486, 0.3792, 0, -0.164238, 0.0948, 0, 0, 0.0948, 0.312899, -0.0943476, 0.0948, 0.354978, -0.141098, 0.2844, 0.354978, -0.480486, 0.2844, 0.354978, -0.141098, 0.2844, 0.312899, -0.0943476, 0.2844, 0, 0)
 
 [node name="kitchenCoffeeMachine" instance=ExtResource("1_57qc1")]
 
 [node name="kitchenCoffeeMachine(Clone)" parent="." index="0"]
 transform = Transform3D(1.58, 0, 0, 0, 1.17, 0, 0, 0, 1.58, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_kqofp")

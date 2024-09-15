@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bc72psaycxdkf"]
+[gd_scene load_steps=3 format=3 uid="uid://bc72psaycxdkf"]
 
 [ext_resource type="PackedScene" uid="uid://bg2oirlpimnwt" path="res://asset/Kenney_furnature-kit/Models/GLTF format/tableCoffeeSquare.glb" id="1_5sud0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_apgu7"]
+size = Vector3(0.879846, 0.506958, 0.882837)
 
 [node name="tableCoffeeSquare" instance=ExtResource("1_5sud0")]
 
 [node name="tableCoffeeSquare(Clone)" parent="." index="0"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.572808, 0.257739, -0.219928)
+shape = SubResource("BoxShape3D_apgu7")

@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbk77k7g5pr3w"]
+[gd_scene load_steps=3 format=3 uid="uid://bbk77k7g5pr3w"]
 
 [ext_resource type="PackedScene" uid="uid://bjce1ae33jymo" path="res://asset/Kenney_furnature-kit/Models/GLTF format/kitchenCabinet.glb" id="1_57qkc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2um0k"]
+size = Vector3(1, 0.926636, 0.958984)
 
 [node name="kitchenCabinet" instance=ExtResource("1_57qkc")]
 
 [node name="kitchenCabinet(Clone)" parent="." index="0"]
 transform = Transform3D(2.33, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.463318, -0.520508)
+shape = SubResource("BoxShape3D_2um0k")

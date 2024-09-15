@@ -1,8 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://clk2q5458y3a1"]
+[gd_scene load_steps=4 format=3 uid="uid://clk2q5458y3a1"]
 
 [ext_resource type="PackedScene" uid="uid://cb0vd1i4flcrs" path="res://asset/Kenney_furnature-kit/Models/GLTF format/laptop.glb" id="1_44gng"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sxegl"]
+size = Vector3(0.582227, 0.0297969, 0.374219)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ivsql"]
+size = Vector3(0.581116, 0.377563, 0.0319214)
 
 [node name="laptop" instance=ExtResource("1_44gng")]
 
 [node name="laptop(Clone)" parent="." index="0"]
 transform = Transform3D(0.968, 0, 0, 0, 0.968, 0, 0, 0, 0.968, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.291113, 0.0148984, -0.187109)
+shape = SubResource("BoxShape3D_sxegl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.914155, 0.405365, 0, -0.405365, 0.914155, 0.290558, 0.178863, -0.436798)
+shape = SubResource("BoxShape3D_ivsql")

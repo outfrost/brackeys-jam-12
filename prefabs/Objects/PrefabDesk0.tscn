@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvj7m5dd703k"]
+[gd_scene load_steps=3 format=3 uid="uid://dvj7m5dd703k"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ktyn2"]
+size = Vector3(0.5, 0.75, 1.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fmcff"]
 size = Vector3(0.5, 0.75, 1.15)
 
 [node name="PrefabDesk0" type="Node3D"]
@@ -8,3 +11,9 @@ size = Vector3(0.5, 0.75, 1.15)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
 mesh = SubResource("BoxMesh_ktyn2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
+shape = SubResource("BoxShape3D_fmcff")
