@@ -172,7 +172,7 @@ func select_actor(actor: Actor) -> void:
 
 func show_available_moves() -> void:
 	reset_display()
-	if !selected_actor:
+	if !selected_actor || !selected_actor.can_move:
 		return
 
 	var pos: = selected_actor.grid_pos

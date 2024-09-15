@@ -8,6 +8,7 @@ const VISUAL_MOVE_SPEED: float = 3.0
 @export var player: bool = false
 @export var actor_name: String
 @export var starting_action_points: int
+@export var can_move: bool = true
 
 var grid_pos: Vector3i
 var action_points: int

@@ -8,6 +8,7 @@ script = ExtResource("1_e7odi")
 player = true
 actor_name = "Beans"
 starting_action_points = 8
+can_move = false
 
 [node name="Beans" parent="." instance=ExtResource("2_s8dqg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.1, 0.5)
