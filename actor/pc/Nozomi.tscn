@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5en7io0degqb"]
+[gd_scene load_steps=6 format=3 uid="uid://c5en7io0degqb"]
 
 [ext_resource type="Material" uid="uid://cxw3li7obmem8" path="res://material/dummy.tres" id="1_wvl2w"]
-[ext_resource type="PackedScene" uid="uid://c4ftbppqg7lh3" path="res://Objects/weapon/Smg.tscn" id="2_iubiy"]
 [ext_resource type="PackedScene" uid="uid://cuka8lub0i4ii" path="res://actor/pc/Fox1.tscn" id="3_rndgw"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_ounu3"]
@@ -34,10 +33,6 @@ mesh = SubResource("SphereMesh_yvmgh")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D/MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.260467)
 mesh = SubResource("CylinderMesh_ci6fj")
-
-[node name="Smg" parent="." instance=ExtResource("2_iubiy")]
-transform = Transform3D(0.999048, 0, 0.0436194, 0, 1, 0, -0.0436194, 0, 0.999048, 0.3, 1.1, -0.1)
-visible = false
 
 [node name="Jacob2" parent="." instance=ExtResource("3_rndgw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
