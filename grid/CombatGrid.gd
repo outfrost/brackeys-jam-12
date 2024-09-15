@@ -26,6 +26,14 @@ const TILE_SW: int = 15
 const TILE_W: int = 16
 const TILE_RUNTIME_HIGHLIGHT: int = 17
 
+class GridPath:
+	var cost: int
+	var steps: Array[Vector3]
+
+	func _init(cost: int, steps: Array[Vector3]) -> void:
+		self.cost = cost
+		self.steps = steps
+
 var astar: = AStarGrid2D.new()
 var actors: Array[Actor] = []
 var selected_actor: Actor
@@ -164,6 +172,7 @@ func select_actor(actor: Actor) -> void:
 	selected_actor = actor
 
 func show_available_moves() -> void:
+	reset_display()
 	if !selected_actor:
 		return
 
@@ -176,7 +185,6 @@ func show_available_moves() -> void:
 		set_cell_item(cell, TILE_RUNTIME_VISIBLE)
 
 func reset_display() -> void:
-	select_actor(null)
 	for cell in get_used_cells():
 		set_cell_item(cell, TILE_RUNTIME_HIDDEN)
 
@@ -225,6 +233,21 @@ func find_reachable_cells(start_pos: Vector3i, max_dist: int) -> Array[Vector3i]
 
 	return result
 
+func get_grid_path_to(end_pos: Vector3i) -> GridPath:
+	var astar_path: = astar.get_id_path(grid_to_astar(selected_actor.grid_pos), grid_to_astar(end_pos))
+	if astar_path.is_empty():
+		return null
+
+	print(astar_path)
+
+	var cost: = calc_path_cost(astar_path)
+
+	var steps: Array[Vector3] = []
+	for astar_pos in astar_path:
+		steps.append(astar_to_spatial(astar_pos))
+
+	return GridPath.new(cost, steps)
+
 func calc_path_cost(path: Array[Vector2i]) -> int:
 	if path.size() < 2:
 		return 0
@@ -238,3 +261,6 @@ func grid_to_astar(v: Vector3i) -> Vector2i:
 
 func astar_to_grid(v: Vector2i) -> Vector3i:
 	return Vector3i(v.x >> 1, 0, v.y >> 1)
+
+func astar_to_spatial(v: Vector2i) -> Vector3:
+	return Vector3(float(v.x) * 0.5, 0.0, float(v.y) * 0.5)
