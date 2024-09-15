@@ -1,0 +1,10 @@
+This is a relatively simple Mission:
+Get in and prepare the environment for our Units. 
+
+
+You are a small Bean, you fit small Spaces. ('WASD' to move 'QE' to rotate camera)
+
+
+Your hacking skills will come in handy in future missions, 
+for now feel free to mess around a bit by opening doors using the Computer Terminals, 
+like the abandoned one at reception, in rooms adjacent to the Doors. (Interact with 'F')
