@@ -36,6 +36,7 @@ func begin_combat(level: Node3D) -> void:
 	begin_turn()
 
 func begin_turn() -> void:
+	grid.select_actor(null)
 	grid.reset_display()
 	player_ui.hide()
 	enemy_ui.hide()
@@ -72,4 +73,21 @@ func begin_turn() -> void:
 		camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)
 
 func actor_move_ordered(pos: Vector3i) -> void:
-	print(pos)
+	var actor: Actor
+
+	if player_turn:
+		actor = ally_actors[actor_idx]
+	else:
+		actor = enemy_actors[actor_idx]
+
+	if actor.moving:
+		return
+
+	var path: = grid.get_grid_path_to(pos)
+	if !path:
+		push_error("unable to initiate move: path does not exist")
+	print(path.steps)
+
+	actor.begin_move(path)
+	actor.grid_pos = pos
+	grid.show_available_moves()
