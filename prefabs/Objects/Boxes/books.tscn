@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://f7j4joonptrf"]
+
+[ext_resource type="PackedScene" uid="uid://dpes8cem43gec" path="res://asset/Kenney_furnature-kit/Models/GLTF format/books.glb" id="1_b4ybv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fi5ys"]
+size = Vector3(0.6, 0.4, 0.2)
+
+[node name="books" instance=ExtResource("1_b4ybv")]
+
+[node name="books(Clone)" parent="." index="0"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0.2, -0.1)
+shape = SubResource("BoxShape3D_fi5ys")

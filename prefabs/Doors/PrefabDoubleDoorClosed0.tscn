@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbjmyyk2uead3"]
+[gd_scene load_steps=7 format=3 uid="uid://dbjmyyk2uead3"]
 
 [ext_resource type="Material" uid="uid://bo7k7k23gomui" path="res://material/brick.tres" id="1_fcshh"]
+[ext_resource type="Script" path="res://prefabs/Doors/prefab_double_door.gd" id="1_pn8ov"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q5nxj"]
 size = Vector3(2.15, 0.5, 0.15)
@@ -15,6 +16,7 @@ size = Vector3(0.8, 2, 0.05)
 size = Vector3(0.8, 2, 0.05)
 
 [node name="PrefabDoubleDoor0" type="Node3D"]
+script = ExtResource("1_pn8ov")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.25, 0)
