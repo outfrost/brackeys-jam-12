@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cduardy2uo8xt"]
+
+[ext_resource type="Texture2D" uid="uid://bnpqmoe12wk8s" path="res://asset/Jacob/textures/T_Jacob2Color.png" id="1_ampnd"]
+
+[resource]
+resource_name = "Jacob_Body"
+specular_mode = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ampnd")
+metallic = 1.0
+emission_enabled = true
+emission_energy_multiplier = 0.4
+emission_texture = ExtResource("1_ampnd")
