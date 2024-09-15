@@ -34,7 +34,7 @@ jobs:
         archive_root_folder: true
 
     - name: Create release
-      uses: ncipollo/release-action@1.14.0
+      uses: ncipollo/release-action@v1.14.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         generateReleaseNotes: true
