@@ -85,6 +85,10 @@ func stealth_objective_reached(_ignore) -> void:
 
 	await get_tree().create_timer(5.0).timeout
 
+	for node in level.find_children("*", "", true, false):
+		if node.has_method("open"):
+			node.open()
+
 	combat_grid.prepare_combat()
 	combat_system.begin_combat(level)
 	overhead_camera.controls_enabled = true
