@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmfdkwcu73843"]
+[gd_scene load_steps=6 format=3 uid="uid://dmfdkwcu73843"]
 
 [ext_resource type="Theme" uid="uid://cgpmko4d01n84" path="res://game/ui-theme/theme.tres" id="1_7yq1p"]
 [ext_resource type="Script" path="res://game/menu/CreditsPopup.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://ypd373fw3g5o" path="res://game/menu/screenshot.png" id="3_3tc4t"]
 [ext_resource type="Script" path="res://game/menu/VersionLabel.gd" id="3_426jp"]
 [ext_resource type="Script" path="res://game/menu/MainMenu.gd" id="4"]
 
@@ -22,7 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stretch_mode = 7
+texture = ExtResource("3_3tc4t")
 
 [node name="VersionLabel" type="Label" parent="."]
 layout_mode = 1
