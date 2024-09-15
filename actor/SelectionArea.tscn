@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk50lvqf4plrl"]
+
+[ext_resource type="Material" uid="uid://h2lmxiwarev3" path="res://material/selection_vis.tres" id="1_bkjbs"]
+[ext_resource type="Script" path="res://actor/SelectionArea.gd" id="1_h2ig3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1dhwn"]
+size = Vector3(0.8, 1.8, 0.8)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_eboj2"]
+material = ExtResource("1_bkjbs")
+top_radius = 0.4
+bottom_radius = 0.4
+height = 1.9
+
+[node name="SelectionArea" type="Area3D"]
+script = ExtResource("1_h2ig3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("BoxShape3D_1dhwn")
+
+[node name="SelectionVis" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+mesh = SubResource("CylinderMesh_eboj2")
+skeleton = NodePath("../..")

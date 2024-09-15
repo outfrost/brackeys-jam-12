@@ -1,6 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://c4ftbppqg7lh3"]
+[gd_scene load_steps=12 format=3 uid="uid://c4ftbppqg7lh3"]
 
+[ext_resource type="Script" path="res://Objects/weapon/Smg.gd" id="1_lbpke"]
 [ext_resource type="Material" uid="uid://gw05r5yrc1ay" path="res://material/firearm.tres" id="1_lurcg"]
+[ext_resource type="Material" uid="uid://bn8vks4uqwhjs" path="res://material/bullet_tracer.tres" id="2_fr0xq"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xxbmy"]
 material = ExtResource("1_lurcg")
@@ -35,7 +37,16 @@ size = Vector3(0.04, 0.12, 0.05)
 material = ExtResource("1_lurcg")
 size = Vector3(0.04, 0.22, 0.08)
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_8qw4w"]
+material = ExtResource("2_fr0xq")
+top_radius = 0.015
+bottom_radius = 0.015
+height = 1.0
+cap_top = false
+cap_bottom = false
+
 [node name="Smg" type="Node3D"]
+script = ExtResource("1_lbpke")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, -0.09)
@@ -69,4 +80,14 @@ skeleton = NodePath("../..")
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 0.991445, -0.130526, 0, 0.130526, 0.991445, 0, -0.15, -0.07)
 mesh = SubResource("BoxMesh_j0ccl")
+skeleton = NodePath("../..")
+
+[node name="BulletStart" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, -0.2)
+
+[node name="BulletTracer" type="MeshInstance3D" parent="BulletStart"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.5)
+visible = false
+mesh = SubResource("CylinderMesh_8qw4w")
 skeleton = NodePath("../..")

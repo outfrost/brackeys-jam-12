@@ -27,7 +27,12 @@ var los_distance: float = 0.0
 var detected: float = 0.0
 var target_last_pos: = Vector3.ZERO
 
-var enabled: bool = true
+var enabled: bool = true:
+	set(v):
+		enabled = v
+		# raise gun
+		$Visual/Smg.position = Vector3(0.3, 1.1, -0.1)
+		$Visual/Smg.rotation = Vector3(0.0, deg_to_rad(2.5), 0.0)
 
 @onready var debug: = Irid.text_overlay.tracker(self).trace("detected")
 
