@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://c4ftbppqg7lh3"]
+
+[ext_resource type="Material" uid="uid://gw05r5yrc1ay" path="res://material/firearm.tres" id="1_lurcg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xxbmy"]
+material = ExtResource("1_lurcg")
+size = Vector3(0.08, 0.12, 0.22)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r41wo"]
+material = ExtResource("1_lurcg")
+size = Vector3(0.05, 0.07, 0.24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4kxs1"]
+material = ExtResource("1_lurcg")
+size = Vector3(0.06, 0.06, 0.08)
+
+[sub_resource type="PrismMesh" id="PrismMesh_sr52i"]
+material = ExtResource("1_lurcg")
+left_to_right = 1.0
+size = Vector3(0.1, 0.06, 0.08)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6ewrl"]
+material = ExtResource("1_lurcg")
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.16
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_vxf6n"]
+material = ExtResource("1_lurcg")
+size = Vector3(0.04, 0.12, 0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j0ccl"]
+material = ExtResource("1_lurcg")
+size = Vector3(0.04, 0.22, 0.08)
+
+[node name="Smg" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, -0.09)
+mesh = SubResource("BoxMesh_xxbmy")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, -0.23)
+mesh = SubResource("BoxMesh_r41wo")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0.02)
+mesh = SubResource("BoxMesh_4kxs1")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 0, 0.01, 0.259502)
+mesh = SubResource("PrismMesh_sr52i")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.02, 0.189502)
+mesh = SubResource("CylinderMesh_6ewrl")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, -0.11, 0.1)
+mesh = SubResource("BoxMesh_vxf6n")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 0.991445, -0.130526, 0, 0.130526, 0.991445, 0, -0.15, -0.07)
+mesh = SubResource("BoxMesh_j0ccl")
+skeleton = NodePath("../..")

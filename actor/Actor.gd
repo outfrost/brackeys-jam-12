@@ -9,6 +9,7 @@ const VISUAL_MOVE_SPEED: float = 3.0
 @export var actor_name: String
 @export var starting_action_points: int
 @export var can_move: bool = true
+@export_range(0.0, 315.0, 45.0, "radians_as_degrees") var starting_rotation: float = 0.0
 
 var grid_pos: Vector3i
 var action_points: int
@@ -18,6 +19,10 @@ var move_path_idx: int = 0
 
 func _ready() -> void:
 	grid_pos = Vector3i(position)
+	if get_child_count() == 0:
+		return
+
+	(get_child(0) as Node3D).rotation.y = starting_rotation
 
 	if get_child(0).get("enabled"):
 		get_child(0).enabled = false
