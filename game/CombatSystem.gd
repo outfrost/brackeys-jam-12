@@ -14,6 +14,7 @@ var camera_lead: Node3D
 var ally_actors: Array[Actor] = []
 var enemy_actors: Array[Actor] = []
 
+var active: bool = false
 var player_turn: bool = true
 var actor_idx: int = 0
 
@@ -21,6 +22,14 @@ func _ready() -> void:
 	player_ui.hide()
 	enemy_ui.hide()
 	end_turn_button.pressed.connect(player_turn_finished)
+
+func _unhandled_input(event: InputEvent) -> void:
+	if !active:
+		return
+
+	if event.is_action_pressed("cycle_actor") && player_turn:
+		get_viewport().set_input_as_handled()
+		cycle_ally_actor()
 
 func begin_combat(level: Node3D) -> void:
 	grid = level.get_node(^"CombatGrid")
@@ -34,6 +43,7 @@ func begin_combat(level: Node3D) -> void:
 			enemy_actors.append(actor)
 
 	enemy_actors.shuffle()
+	active = true
 
 	begin_turn()
 
@@ -74,6 +84,19 @@ func begin_turn() -> void:
 
 		camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)
 
+func cycle_ally_actor() -> void:
+	actor_idx = (actor_idx + 1) % ally_actors.size()
+
+	var actor: = ally_actors[actor_idx]
+	name_label.text = actor.actor_name
+	ap_label.text = "AP %d/%d" % [actor.action_points, actor.starting_action_points]
+	player_ui.show()
+
+	grid.select_actor(actor)
+	grid.show_available_moves()
+
+	camera_lead.global_position = actor.global_position + Vector3(0.5, 0.0, 0.5)
+
 func actor_move_ordered(pos: Vector3i) -> void:
 	var actor: Actor
 
@@ -88,7 +111,6 @@ func actor_move_ordered(pos: Vector3i) -> void:
 	var path: = grid.get_grid_path_to(pos)
 	if !path:
 		push_error("unable to initiate move: path does not exist")
-	print(path.steps)
 
 	actor.begin_move(path)
 	actor.grid_pos = pos

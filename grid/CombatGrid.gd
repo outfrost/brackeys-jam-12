@@ -237,8 +237,6 @@ func get_grid_path_to(end_pos: Vector3i) -> GridPath:
 	if astar_path.is_empty():
 		return null
 
-	print(astar_path)
-
 	var cost: = calc_path_cost(astar_path)
 
 	var steps: Array[Vector3] = []
