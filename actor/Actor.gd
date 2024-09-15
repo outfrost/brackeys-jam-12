@@ -32,6 +32,8 @@ func _process(delta: float) -> void:
 				moving = false
 				move_path = null
 				done_moving.emit()
+		else:
+			(get_child(0) as Node3D).rotation.y = Vector3.FORWARD.signed_angle_to(dest - position, Vector3.UP)
 
 func begin_move(path: CombatGrid.GridPath) -> void:
 	if moving:
