@@ -4,6 +4,7 @@ extends Node3D
 signal done_moving
 signal done_attacking
 signal selected
+signal died
 
 const VISUAL_MOVE_SPEED: float = 3.0
 const ATTACK_AP_COST: int = 4.0
@@ -19,6 +20,7 @@ const SEL_AREA_SCN: PackedScene = preload("res://actor/SelectionArea.tscn")
 @onready var weapon: Node3D = find_child("Smg", true, false)
 
 var grid_pos: Vector3i
+var hp: int = 10
 var action_points: int
 var moving: bool = false
 var move_path: CombatGrid.GridPath = null
@@ -30,13 +32,16 @@ var selection_area: SelectionArea
 func _ready() -> void:
 	grid_pos = Vector3i(position)
 
+	for node in find_children("*", "CollisionShape3D", true, false):
+		node.disabled = true
+
 	selection_area = SEL_AREA_SCN.instantiate()
 	add_child(selection_area)
 	selection_area.enable(false)
 	selection_area.position = Vector3(0.5, 0.0, 0.5)
 	selection_area.selected.connect(func(): selected.emit())
 
-	if get_child_count() == 0:
+	if get_child_count() < 1:
 		return
 
 	(get_child(0) as Node3D).rotation.y = starting_rotation
@@ -82,6 +87,11 @@ func attack(target: Actor) -> void:
 	if attacking:
 		attacking = false
 		done_attacking.emit()
+
+func take_damage(dmg: int) -> void:
+	hp -= dmg
+	if hp <= 0:
+		died.emit()
 
 func set_selectable(v: bool) -> void:
 	selection_area.enable(v)

@@ -55,6 +55,7 @@ func on_start_game() -> void:
 
 	combat_system = COMBAT_SYSTEM_SCN.instantiate()
 	world_container.add_child(combat_system)
+	combat_system.level = level
 	combat_system.camera_lead = combat_camera_lead
 
 	var beans: = BEANS_SCN.instantiate()

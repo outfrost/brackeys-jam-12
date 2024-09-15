@@ -1,4 +1,4 @@
-extends Node
+extends Node3D
 
 signal win
 signal loss
@@ -10,6 +10,7 @@ signal loss
 @onready var attack_button: Button = %AttackButton
 @onready var end_turn_button: Button = %EndTurnButton
 
+var level: Node3D
 var grid: CombatGrid
 var camera_lead: Node3D
 var ally_actors: Array[Actor] = []
@@ -46,6 +47,7 @@ func begin_combat(level: Node3D) -> void:
 		else:
 			enemy_actors.append(actor)
 		actor.selected.connect(func(): actor_selected(actor))
+		actor.died.connect(func(): actor_died(actor))
 
 	enemy_actors.shuffle()
 	active = true
@@ -137,8 +139,18 @@ func attack_pressed() -> void:
 
 	for actor in ally_actors:
 		actor.set_selectable(false)
+
+	var selected_actor: = ally_actors[actor_idx]
+	var space_state: = get_world_3d().direct_space_state
 	for actor in enemy_actors:
-		actor.set_selectable(true)
+		var query: = PhysicsRayQueryParameters3D.create(
+			selected_actor.global_position + Vector3(0.5, 1.5, 0.5),
+			actor.global_position + Vector3(0.5, 1.5, 0.5)
+		)
+		var result: = space_state.intersect_ray(query)
+
+		if !result || !result["collider"]:
+			actor.set_selectable(true)
 
 	grid.reset_display()
 	in_attack_selection = true
@@ -152,6 +164,7 @@ func actor_selected(actor: Actor) -> void:
 
 		ally_actors[actor_idx].attack(actor)
 		await ally_actors[actor_idx].done_attacking
+		actor.take_damage(6)
 
 		update_player_ui()
 		grid.show_available_moves()
@@ -159,6 +172,20 @@ func actor_selected(actor: Actor) -> void:
 			a.set_selectable(true)
 	elif !in_attack_selection && player_turn && actor in ally_actors:
 		select_ally_actor(ally_actors.find(actor))
+
+func actor_died(actor: Actor) -> void:
+	#for child in actor.get_children():
+		#if child != actor.selection_area:
+			#(child as Node3D).rotate_x(TAU / 4.0)
+			#(child as Node3D).translate(Vector3(0.0, 0.0, -0.6))
+			#var xform: Transform3D = child.global_transform
+			#actor.remove_child(child)
+			#level.add_child(child)
+			#child.global_transform = xform
+			#child.owner = level
+	grid.remove_child(actor)
+	grid.actors.erase(actor)
+	actor.queue_free()
 
 func check_combat_state() -> void:
 	if ally_actors.size() == 0:

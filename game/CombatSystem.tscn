@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://game/CombatSystem.gd" id="1_lkx8l"]
 [ext_resource type="Theme" uid="uid://cgpmko4d01n84" path="res://game/ui-theme/theme.tres" id="2_g8hup"]
 
-[node name="CombatSystem" type="Node"]
+[node name="CombatSystem" type="Node3D"]
 script = ExtResource("1_lkx8l")
 
 [node name="PlayerUI" type="Control" parent="."]
