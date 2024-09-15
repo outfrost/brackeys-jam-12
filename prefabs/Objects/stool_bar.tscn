@@ -3,15 +3,16 @@
 [ext_resource type="PackedScene" uid="uid://bod5vjsbshllx" path="res://asset/Kenney_furnature-kit/Models/GLTF format/stoolBar.glb" id="1_k1i53"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k15cd"]
-size = Vector3(0.25, 0.434692, 0.25)
+size = Vector3(0.25, 0.3, 0.25)
 
 [node name="stoolBar" instance=ExtResource("1_k1i53")]
 
 [node name="stoolBar(Clone)" parent="." index="0"]
+transform = Transform3D(2.2, 0, 0, 0, 1.5, 0, 0, 0, 2.2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
 transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="stoolBar(Clone)" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="stoolBar(Clone)/StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.217346, -0.116016)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0.15, -0.116016)
 shape = SubResource("BoxShape3D_k15cd")
